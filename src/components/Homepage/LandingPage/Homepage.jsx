@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from '../Footer/footer'
 import Styles from "./Homepage.module.css"
 
 export const Homepage = () => {
@@ -87,7 +88,7 @@ export const Homepage = () => {
 
 
         <div>
-            Footer
+            <Footer/>
         </div>
 
           
