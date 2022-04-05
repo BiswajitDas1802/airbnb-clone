@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import {starr} from './star'
+import heart from './img/heart-solid.svg'
 
 const DescriptionDiv = styled.div`
     width:80%;
@@ -16,6 +17,16 @@ const DescriptionDiv = styled.div`
         width:40px;
         margin-left:0;
         color:#FFF8F6;
+    }
+    &>div>div{
+        display:flex;
+        justify-content:space-between;
+
+        i{
+            font-size:25px;
+            font-weight:200;
+            color:#cecece;
+        }
     }
     
 `
@@ -37,7 +48,7 @@ const BotDiv = styled.div`
 
 
     &>p{
-        width:200px;
+        // width:200px;
         margin:0;
     }
     &>p>img{
@@ -64,7 +75,7 @@ const Description = ({item}) => {
   return (
     <DescriptionDiv>
         <div >
-          <P>{title}</P>
+          <div><P>{title}</P><i class="far fa-heart"></i> </div>
           <H3>{windWid<1300?location.substring(0,30)+"...":location}</H3>
         </div>
         <hr/>

@@ -36,7 +36,9 @@ const InfoContainer = styled.div`
   & > div {
     
     display: flex;
-    height: 98%;
+    justify-content:center;
+    align-items:center;
+    height: 96%;
     min-width: 280px;
     position: relative;
     
@@ -45,7 +47,7 @@ const InfoContainer = styled.div`
   & > div > img {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 15px;
   }
 `;
 
