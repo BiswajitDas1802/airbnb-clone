@@ -25,7 +25,7 @@ export const Homepage = () => {
 
           {/* cards */}
 
-          <div className={Styles.destination_container}>
+        <div className={Styles.destination_container}>
             <p className={Styles.destination_heading}>Inspiration for your next trip</p>
             <div className={Styles.destination_cards}>
                 <div className={Styles.single_card}>
@@ -57,6 +57,21 @@ export const Homepage = () => {
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div>
+            <p className={Styles.experiences_heading}>Discover Airbnb Experiences</p>
+            <div className={Styles.experiences_box}>
+                <div className={Styles.left_image}>
+                    <p className={Styles.experiences_title}>Things to do on your trip</p>
+                    <button className={Styles.experiences_button}>Experiences</button>
+                </div>
+
+                <div className={Styles.right_image}>
+                    <p className={Styles.experiences_title}>Things to do from home</p>
+                    <button className={Styles.experiences_button}>Online Experiences</button>
+                </div>
             </div>
         </div>
 

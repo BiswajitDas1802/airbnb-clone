@@ -107,6 +107,7 @@
 }
 .single_card{
   width:23%;
+  cursor: pointer;
 }
 .card_image{
   border-top-right-radius: 10px;
@@ -129,4 +130,53 @@
 .distance{
   margin-left: 5%;
   margin-top: -10%;
+}
+
+.experiences_heading{
+  margin-top: 5%;
+  margin-left: 6%;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 47px;
+}
+.experiences_box{
+  display: flex;
+  width:88%;
+  gap:2%;
+  margin:auto;
+}
+.left_image{
+  border-radius: 10px;
+  width:99%;
+  height:540px;
+  color:white;
+  background-size: 100% 100%;
+  background-image: url("https://a0.muscache.com/im/pictures/0dcae177-2f65-4a15-b9e8-75d8c9b3cbe8.jpg?im_w=960");
+}
+.right_image{
+  border-radius: 10px;
+  width:99%;
+  height:540px;
+  color:white;
+  background-size: 100% 100%;
+  background-image: url("https://a0.muscache.com/im/pictures/4cef99fa-068f-4197-8b1d-e8e04ac0ceaf.jpg?im_w=960");
+}
+.experiences_title{
+  font-size:40px;
+  font-weight:500;
+  margin-right:43%;
+  margin-left: 7%;
+}
+.experiences_button{
+  margin-left: 7%;
+  background-color: white;
+  padding:14px;
+  padding-left:18px;
+  padding-right:18px;
+  border:1px solid transparent;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color:rgb(61, 59, 59);
+  cursor: pointer;
 }
