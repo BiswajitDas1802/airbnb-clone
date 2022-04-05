@@ -180,3 +180,42 @@
   color:rgb(61, 59, 59);
   cursor: pointer;
 }
+
+.question_box{
+  margin-top: 8%;
+  width:88%;
+  height:590px;
+  margin:auto;
+}
+.question_box_image{
+  width:100%;
+  height:100%;
+  border-radius: 10px;
+  background-size: 100% 100%;
+  background-image: url("https://a0.muscache.com/im/pictures/83f0dc6f-9290-46f6-9db5-339d525b44d1.jpg?im_w=1920");
+}
+.question_title{
+  font-size:75px;
+  font-weight:500;
+  margin-right:60%;
+  margin-left: 7%;
+  color:white;
+  line-height:85px;
+  padding-top:60px;
+}
+.superhost_button{
+  margin-left: 7%;
+  background-color: white;
+  padding:15px;
+  padding-left:19px;
+  padding-right:19px;
+  border:1px solid transparent;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color:rgb(34, 33, 33);
+  margin-top: 6%;
+  cursor:pointer;
+}
+
+

@@ -4,6 +4,9 @@ import Styles from "./Homepage.module.css"
 export const Homepage = () => {
   return (
     <>
+        <div>
+            navbar
+        </div>
           <div className={Styles.black_bg}>
               <div className={Styles.pink_highlight}>
                   <div className={Styles.pink_highlight_text}>
@@ -73,6 +76,18 @@ export const Homepage = () => {
                     <button className={Styles.experiences_button}>Online Experiences</button>
                 </div>
             </div>
+        </div>
+
+        <div style={{marginBottom:"5%"}} className={Styles.question_box}>
+            <div className={Styles.question_box_image}>
+                <p className={Styles.question_title}>Questions about hosting?</p>
+                <button className={Styles.superhost_button}>Ask a Superhost</button>
+            </div>
+        </div>
+
+
+        <div>
+            Footer
         </div>
 
           
