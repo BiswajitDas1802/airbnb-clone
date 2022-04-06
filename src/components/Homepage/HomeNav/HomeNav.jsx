@@ -1,7 +1,9 @@
 import React from 'react'
 import "./HomeNav.css"
 import { useState } from 'react'
-
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+import {Hamburger} from "./Hamburger"
 import Styled from "styled-components"
 
 const Hamwrapper = Styled.div`
@@ -9,6 +11,7 @@ const Hamwrapper = Styled.div`
 margin-top:7px;
 width:30%;
 height:73%;
+gap:10px;
 border-radius: 30px;
 background-color: white;
 border:1px solid transparent;
@@ -19,6 +22,27 @@ border:1px solid rgb(204, 195, 195);
 `
 
 export const HomeNav = () => {
+
+    const hamstyle = {
+        position: "absolute",
+        left: "78%",
+        width: "15%",
+        marginTop:"70px",
+        bgcolor: "background.paper",
+        borderRadius:"10px",
+        fontFamily: "sans-serif",
+        maxHeight: "1024px",
+        overflowX: "hidden",
+        transform: "none",
+        transition: "transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms",
+        height: "35%",
+        paddingLeft: "10px",
+      };
+
+    const [display, setDisplay] = useState(false);
+
+    const  handlePopin =()=> setDisplay(true);
+    const  handlePopout =()=> setDisplay(false);
 
     const [homeNav,setHomeNav]=useState(false)
     const [airbnb_logo,setLogo]=useState(false)
@@ -85,14 +109,16 @@ export const HomeNav = () => {
                             <p className={lower_head?"host_decoration active":"host_decoration"}>Become a host</p>
                             <div className={globe_icon?"globe_logo active":"globe_logo"}></div>
 
-                            <Hamwrapper>
-                                <div>
-                                    <img style={{paddingTop:"10px",marginLeft:"10px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2qzjGHx362VfxQWKWwi2GCEoyqUnsRIm9jEF2oIlWx6Z76KjowacdQTq8s4UfonUSnA&usqp=CAU" width="20px"></img>
-                                </div>
-                                <div>
-                                    <img style={{borderRadius:"50%"}} src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-227787227.jpg" width="39px" height="36px"></img>
-                                </div>
-                            </Hamwrapper>
+                           
+
+                                <Hamwrapper onClick={handlePopin}>
+                                    <div>
+                                        <img style={{paddingTop:"10px",marginLeft:"10px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2qzjGHx362VfxQWKWwi2GCEoyqUnsRIm9jEF2oIlWx6Z76KjowacdQTq8s4UfonUSnA&usqp=CAU" width="20px"></img>
+                                    </div>
+                                    <div>
+                                        <img style={{borderRadius:"50%"}} src="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-default-avatar-profile-icon-vector-social-media-user-image-vector-illustration-227787227.jpg" width="39px" height="36px"></img>
+                                    </div>
+                                </Hamwrapper>
 
 
                         </div>
@@ -120,6 +146,18 @@ export const HomeNav = () => {
                     </span>
                 </div>
         </div>
+
+        <Modal
+            open={display}
+            onClose={handlePopout} 
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+        >
+            <Box sx={hamstyle}>
+              <Hamburger/>
+            </Box>
+        </Modal>
+
     </>
   )
 }
