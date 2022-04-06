@@ -1,19 +1,7 @@
-.a_upper_header{
-    padding-top:12px;
-    padding-bottom: 10px;
-    width:88%;
-    margin: auto;
-    /* border:1px solid white; */
-    color:white;
-    display: flex;
-    justify-content: space-between;
-    
-}
 
 .navbar{
     width:100%;
     border-bottom: 1px solid transparent;
-    /* display: flex; */
     justify-content: space-around;
     position: fixed;
     background: transparent;
@@ -25,6 +13,17 @@
     height:80px;
     border-bottom: 1px solid rgb(228, 224, 224);
  }
+ .upper_header{
+    padding-top:12px;
+    padding-bottom: 10px;
+    width:88%;
+    margin: auto;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
 .red_air_logo{
       display: none;
 }
@@ -52,8 +51,7 @@
     width:17px;
       height:17px;
   }
-  .a_right_nav{
-    /* border:1px solid white; */
+  .right_nav{
     display:flex;
     justify-content:space-between;
     width:21%;
@@ -70,15 +68,14 @@
       font-weight: 500;
       font-size: 14px;
   }
-.a_right_nav.active{
+.right_nav.active{
       color:black;
       color:white;
       font-weight: 500;
       font-size: 14px;
       margin-top: 5px;
 }
-.a_lower_header{
-        /* border:1px solid yellow; */
+.lower_header{
         background-color: white;
         width:67%;
         margin-top:50%;
@@ -93,47 +90,46 @@
         color:rgb(116, 110, 110);
         display: flex;
     }
-.a_lower_header.active{
+.lower_header.active{
         display: none;
     }
-#a_location_nav{
+.location_nav{
         padding-right: 10%;
         margin-left: 3%;
         border-left:1px solid transparent;
     }
-.a_search_nav{
+.search_nav{
         background-color: #ff385c;
         border-radius: 50%;
         margin-top: 7px;
         margin-bottom: 7px;
         margin-right: 10px;
         }
-.a_search_icon{
+.search_icon{
         padding-left:15px ;
         padding-top: 15px;
         padding-right: 15px;
         padding-bottom:20px ;
         }
-.a_lower_header>div{
-        /* border:1px solid black; */
+.lower_header>div{
         width:30%;
         border-left:1px solid rgb(210, 210, 218);
         height:32px;
         margin-top: 15px;
         margin-bottom: 5px;
         }
-.a_lower_header>div>p{
+.lower_header>div>p{
         margin-left:12%;
         margin-top: 1px;
         /* width:30%; */
         
         }
-.a_lower_header>div>p:nth-child(1){
+.lower_header>div>p:nth-child(1){
         font-size: 13px;
         font-weight: 600;
         color:black;
         }
-.a_navmiddle{
+.navmiddle{
         display:flex;
         justify-content:space-around;
         width:40%;
@@ -141,7 +137,7 @@
         display: flex;
         /* border:1px solid white; */
         }
-.a_navmiddle.active{
+.navmiddle.active{
         display: none;
     }
 .after_scroll_search{
@@ -163,18 +159,17 @@
 .after_scroll_search>p{
         margin-left: 7%;
     }
-.a_search_nav_scroll{
+.search_nav_scroll{
         background-color: #ff385c;
         border-radius: 50%;
         margin-top: 7px;
         margin-bottom: 7px;
         margin-right: 10px;
     }
-.a_search_icon_scroll{
+.search_icon_scroll{
         padding-left:10px ;
         padding-top: 9px;
         padding-right: 10px;
-        /* padding-bottom:-1px ; */
     }
             
 
