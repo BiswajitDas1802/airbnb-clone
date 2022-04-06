@@ -1,8 +1,15 @@
 import React from 'react'
 import { Footer } from '../Footer/footer'
 import Styles from "./Homepage.module.css"
+import { useNavigate } from 'react-router-dom'
 
 export const Homepage = () => {
+
+    const navigate = useNavigate()
+    const handleNav = () => {
+        navigate("/lonavla")
+    }
+
   return (
     <>
         <div>
@@ -32,7 +39,7 @@ export const Homepage = () => {
         <div className={Styles.destination_container}>
             <p className={Styles.destination_heading}>Inspiration for your next trip</p>
             <div className={Styles.destination_cards}>
-                <div className={Styles.single_card}>
+                <div onClick={handleNav}  className={Styles.single_card}>
                     <img className={Styles.card_image} src="https://a0.muscache.com/im/pictures/73250991-433e-4950-b7d1-59bba711bb57.jpg?im_w=480" width="100%"></img>
                     <div style={{backgroundColor:"#bc1a6e"}} className={Styles.card_color}>
                         <p className={Styles.destination_title}>Lonavla</p>

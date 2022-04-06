@@ -55,6 +55,9 @@ const Infodiv = styled.div`
 const RoundBtn = styled.button`
   border:1px solid #cecece;
   border-radius:18px;
+  white-space:nowrap;
+  margin-right:10px;
+  margin-left:5px;
   padding:8px 20px 12px 20px;
   font-size:15px;
   background-color:white;
@@ -63,6 +66,10 @@ const RoundBtn = styled.button`
         border:none;
         outline:none;
     }
+    @media (max-width:380px){
+        white-space:nowrap;
+    }
+
 `
 
 const FooterDiv = styled.div`
@@ -74,6 +81,10 @@ const Top = styled.div`
   display: flex;
   justify-content:space-evenly;
   padding:20px 0px;
+
+  @media (max-width: 380px) {
+      overflow-X:scroll;
+  }
 `;
 export const MapwithHotels = () => {
   const [hotel, setHotel] = useState(null);
@@ -115,7 +126,7 @@ export const MapwithHotels = () => {
         
       </Wrapper>
 
-      <FooterDiv />
+      {/* <FooterDiv /> */}
     </div>
   );
 };

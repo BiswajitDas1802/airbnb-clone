@@ -48,15 +48,6 @@ export const RightMap = ({hotels}) => {
         pitch:50
     })
 
-    // const coordinate = hotels&&hotels.map((item)=>({longitude: item.long,latitude: item.lat}))
-    // const center = getCenter(coordinate)
-
-
-    // useEffect(() => {
-        // console.log(center.latitude,center.longitude)
-        // setViewPort({...viewport,latitude: center.latitude})
-        // setViewPort({...viewport,longitude: center.longitude})
-    // }, [])
     const coordinates = lonavla.map((item)=>(item.coord))
     console.log(coordinates)
     let inWidth = window.innerWidth
@@ -70,10 +61,6 @@ export const RightMap = ({hotels}) => {
         onMove={evt => setViewPort(evt.viewport)}
         doubleClickZoom={true}
     >
-        {/* {coordinates.map((item)=>(
-        <Marker longitude={item[0] } latitude={item[1]} />
-
-     ))}  */}
      <Marker style={{position: 'absolute',top: '9vh',}}  longitude={73.4091} latitude={18.5557}  ><Mark >"₹4,529</Mark></Marker>
      <Marker style={{position: 'absolute',top: '8vh',}}  longitude={73.3591} latitude={18.7557}  ><Mark >₹4,829</Mark></Marker>
      <Marker style={{position: 'absolute',top: '11vh',}} longitude={73.3091} latitude={18.6557} ><Mark >₹5,829</Mark></Marker>
