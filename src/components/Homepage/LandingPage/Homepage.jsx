@@ -2,6 +2,7 @@ import React from 'react'
 import { Footer } from '../Footer/footer'
 import Styles from "./Homepage.module.css"
 import { useNavigate } from 'react-router-dom'
+import { HomeNav } from '../HomeNav/HomeNav'
 
 export const Homepage = () => {
 
@@ -12,10 +13,11 @@ export const Homepage = () => {
 
   return (
     <>
-        <div>
-            navbar
-        </div>
+        
           <div className={Styles.black_bg}>
+            <div>
+                <HomeNav/>
+            </div>
               <div className={Styles.pink_highlight}>
                   <div className={Styles.pink_highlight_text}>
                     <p className={Styles.help_text}>Help house 100,000 refugees fleeing Ukraine</p>
