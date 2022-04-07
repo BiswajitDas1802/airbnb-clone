@@ -143,6 +143,9 @@ export const Host=()=>{
             <button>Let's go!</button>
         </div>
     </div>
+    <div id="fixed_box_bottom">
+        <button id="fixed_hosting_button">Try Hosting</button>
+    </div>
     <Footer/>
     </>
     )}

@@ -284,6 +284,10 @@
     background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
 }
 
+#fixed_hosting_button{
+    display: none;
+}
+
 @media only screen and (max-width: 950px){
 
     #host_header{
@@ -368,9 +372,90 @@
         margin-left: -20%;
         
     }
+    #aircover>div>p{
+        font-size:20px
+    }
 }
 
 @media only screen and (max-width: 744px){
 
-    
+    #earning{
+        padding:20px;
+        padding-bottom: 100px;
+        font-size: 30px;
+        font-weight: 500;
+        text-align:center;
+        margin:auto;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    #earning>div>select{
+        font-weight: 300;
+        border:1px solid transparent;
+        padding-top:-20px;
+        font-size: 30px;
+        text-decoration: underline;
+        margin-left: -20%;
+        
+    }
+
+    #Question_hosting{
+        width:93%;
+        height:650px;
+        margin:auto;
+        background-image: url("https://a0.muscache.com/im/pictures/93ef1829-62d1-4349-8b4a-b02ebc650a25.jpg?im_w=2560&im_q=highq");
+        background-size: 100% 100%;
+        font-size: 30px;
+        font-weight: 600;
+        color:white;
+        text-align: center;
+        line-height: 3px;
+        border-radius: 10px;
+    }
+
+    .denim{
+        display: none;
+        background-image: url("./denim_girl.png");
+        background-size: 100% 100%;
+    }
+    #try_hosting>div{
+        width:100%;
+    }
+    #try_hosting>div>button{
+        display: none;
+        margin-left: 40%;
+        padding-top:14px;
+        padding-bottom: 14px;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 23px;
+        padding-right: 23px;
+        border-radius: 8px;
+        margin-top:5%;
+        border:1px solid transparent;
+        color:white;
+        background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
+    }
+
+    #fixed_box_bottom{
+
+        width: 100%;
+        background-color: whitesmoke;
+        /* position: sticky; */
+    }
+
+    #fixed_hosting_button{
+        display: block;
+        width: 80%;       
+        padding-top:14px;
+        padding-bottom: 14px;
+        margin: auto;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 8px;
+        border:1px solid transparent;
+        color:white;
+        background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
+        
+    }
 }

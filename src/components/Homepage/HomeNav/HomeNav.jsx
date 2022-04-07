@@ -56,7 +56,7 @@ export const HomeNav = () => {
 
     const changeNavbar=()=>{
 
-        if(window.scrollY>=145){
+        if(window.scrollY>=120){
             setHomeNav(true)
             setLogo(true)
             setGlobe(true)
@@ -161,6 +161,15 @@ export const HomeNav = () => {
                     <span className="search_nav">
                         <img className="search_icon" src="https://hamariweb.com/names/img/search_light.png" width="20px" height="20px"></img>
                     </span>
+                </div>
+        </div>
+        <div className={homeNav? "nav2 active":"nav2"}>
+                <div className='nav2_inside'>
+                    
+                    <span className="search_nav_scroll">
+                        <img className="" src="https://hamariweb.com/names/img/search_light.png" width="25px" height="25px"></img>
+                    </span>
+                    <p>Choose your location</p>
                 </div>
         </div>
 
