@@ -38,6 +38,24 @@ const Mapdiv = styled.div`
         width:100%;
     }
 `
+const HostDetails = styled.div`
+    margin-top:50px;
+    width:40%;
+    .host-img{
+        display:flex;
+
+        h2,p{
+            margin:0;
+        }
+
+        img{
+            width:60px;
+            margin-right:10px;
+            height:60px;
+            border-radius:50%;
+        }
+    }
+`
 
 const Reviews = () => {
 
@@ -80,6 +98,29 @@ const Reviews = () => {
             <h2 style={{fontWeight:"300"}}>Where you'll be</h2>
             <img src={map} alt=""/>
         </Mapdiv>
+        <div>
+            <h3>Alibag , Maharasthra ,India</h3>
+            <p>This apartment is located in very peaceful and developed residential Area of Varsoli and the Complex has 36 Apartments with ample parking space and security features such as CCTV Camera, EPBX an Small Garden and Driver Waiting Room.</p>
+            <h3 style={{marginBottom:"50px"}}>Show More</h3>
+            <hr/>
+        </div>
+        <HostDetails>
+            <div className="host-img">
+            <img src="https://a0.muscache.com/im/pictures/user/649aa4d4-579c-4783-99a8-06ff86f3b1e6.jpg?im_w=240" alt="" />
+            <div>
+                <h2>Hosted By Nikhil</h2>
+                <p>Joined in May 2015</p>
+            </div>
+            </div>
+            <div></div>
+            <div>
+            <h3>During your stay</h3>
+            <p>Sometimes its quite possible to have a greet with guest, we are four brother you will meet any one of us and I am just a phone call away if you require anything.</p> 
+            <p>Response rate: 100%</p>
+            <p>Response time: within an hour</p>
+            </div>
+        <Revbutton style={{width:"100px"}}>Contact Host</Revbutton>
+        </HostDetails>
     </div>
   )
 }
