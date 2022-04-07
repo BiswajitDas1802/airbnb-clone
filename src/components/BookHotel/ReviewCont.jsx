@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const WrapDiv = styled.div`
+ const WrapDiv = styled.div`
     width:45%;
     min-width:45%;
     margin-bottom:50px;
