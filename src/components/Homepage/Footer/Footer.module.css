@@ -77,7 +77,7 @@
       gap:2%;
     }
     .footer_categories{
-      width:100%;
+      width:85%;
       height:auto;
       padding-left: 35px;
     }
@@ -108,5 +108,8 @@
     .globe_img{
       margin-top:5%;
       margin-right: 0%;
+    }
+    .down_footer_right{
+      width:100%;
     }
   }
