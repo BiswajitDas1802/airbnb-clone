@@ -169,7 +169,7 @@ export const HomeNav = () => {
                     <span className="search_nav_scroll">
                         <img className="" src="https://hamariweb.com/names/img/search_light.png" width="25px" height="25px"></img>
                     </span>
-                    <p>Choose your location</p>
+                    <p>Where are you going?</p>
                 </div>
         </div>
 
