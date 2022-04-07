@@ -100,8 +100,8 @@ export const HomeNav = () => {
 
   return (
     <>
-        <div className={homeNav?"navbar active":"navbar"}>
-                <div className="upper_header">
+        <div style={scroll_search?{backgroundColor:"white"}:{backgroundColor:"black"}} className={homeNav?"navbar active":"navbar"}>
+                <div  className="upper_header">
                         <div style={{marginLeft:"-1%",marginTop:"1%"}}>
                             <div className={airbnb_logo?"logo active":"logo"}></div>
                         </div>

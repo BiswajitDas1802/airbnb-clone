@@ -320,6 +320,8 @@
   }
   .single_card{
     width:100%;
+    min-width:250px;
+
     cursor: pointer;
   }
   .experiences_heading{
