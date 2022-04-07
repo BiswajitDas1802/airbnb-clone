@@ -1,4 +1,6 @@
-
+.nav2{
+    display: none;
+}
 .navbar{
     width:100%;
     border-bottom: 1px solid transparent;
@@ -63,11 +65,21 @@
 .host_decoration{
       color:white;
   }
+  .host_decoration:hover{
+
+        background-color: gray;
+        border-radius: 3px;
+  }
 .host_decoration.active{
       color:black;
       font-weight: 500;
       font-size: 14px;
   }
+.host_decoration.active:hover{
+
+    background-color: gray;
+    border-radius: 3px;
+}
 .right_nav.active{
       color:black;
       color:white;
@@ -77,7 +89,7 @@
 }
 .lower_header{
         background-color: white;
-        width:53%;
+        width:743px;
         margin-top:50%;
         border-radius: 35px;
         display: flex;
@@ -119,9 +131,7 @@
         margin-bottom: 5px;
         }
 .lower_header>div>p{
-        margin-left:12%;
         margin-top: 1px;
-        /* width:30%; */
         
         }
 .lower_header>div>p:nth-child(1){
@@ -132,10 +142,9 @@
 .navmiddle{
         display:flex;
         justify-content:space-around;
-        width:40%;
+        width:50%;
         margin-right: -10%;
-        display: flex;
-        /* border:1px solid white; */
+
         }
 .navmiddle.active{
         display: none;
@@ -152,6 +161,7 @@
         font-size: 14px;
         font-weight: 500;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
     }
 .after_scroll_search.active{
         display: flex;
@@ -171,7 +181,46 @@
         padding-top: 9px;
         padding-right: 10px;
     }
-            
+          
+    
+@media only screen and (max-width: 744px){
+
+    .navbar{
+        display: none;
+        width:100%;
+        border-bottom: 1px solid transparent;
+        justify-content: space-around;
+        position: fixed;
+        background: transparent;
+        top:0;
+        height:145px;
+    }
+    .nav2{
+        display: block;
+        background-color: black;
+    }
+    .nav2.active{
+        display: block;
+        background-color: white;
+        position: fixed;
+        width: 100%;
+    }
+    .nav2_inside{
+
+        display: flex;
+        width: 50%;
+        margin: auto;
+        background-color: whitesmoke;
+        color: black;
+        margin-top: 10px;
+        border-radius: 20px;
+        align-items: center;
+        padding-left: 40%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+}
 
     
 

@@ -24,6 +24,7 @@ export const Footer =()=>{
                             <p>Combating discrimination</p>
                         </div>
                     </div>
+                
                     <div className={Styles.footer_categories}>
                         <p className={Styles.category_title}>Hosting</p>
                         <div className={Styles.category_details}>
@@ -34,6 +35,7 @@ export const Footer =()=>{
                             <p>How to host responsibly</p>
                         </div>
                     </div>
+            
                     <div className={Styles.footer_categories}>
                         <p className={Styles.category_title}>About</p>
                         <div className={Styles.category_details}>
