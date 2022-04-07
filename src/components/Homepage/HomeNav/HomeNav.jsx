@@ -53,6 +53,7 @@ export const HomeNav = () => {
     const [scroll_search,setScrollSearch]=useState(false)
 
 
+
     const changeNavbar=()=>{
 
         if(window.scrollY>=145){
@@ -83,6 +84,17 @@ export const HomeNav = () => {
         C2: "active",        
       }
 
+      const handleSearch =()=>{
+
+            setHomeNav(false)
+            setLogo(false)
+            setGlobe(false)
+            setBecomeHost(false)
+            setLowerHead(false)
+            setNavmiddle(false)
+            setScrollSearch(false)
+      }
+
 
 
   return (
@@ -98,7 +110,7 @@ export const HomeNav = () => {
                             <p>Online Experiences</p>
                         </div>
 
-                        <div className={scroll_search?"after_scroll_search active":"after_scroll_search"}>
+                        <div className={scroll_search?"after_scroll_search active":"after_scroll_search"} onClick={handleSearch}>
                             <p>Start your search</p>
                             <span className="search_nav_scroll">
                                 <img className="search_icon_scroll" src="https://hamariweb.com/names/img/search_light.png" width="15px" height="15px"></img>
@@ -125,22 +137,27 @@ export const HomeNav = () => {
                 </div>
 
                 <div className={lower_head?"lower_header active":"lower_header"}>
+
                     <div className="location_nav">
                         <p>Location</p>
                         <p>Where are you going?</p>
                     </div>
+
                     <div>
                         <p>Check in</p>
                         <p>Add dates</p>
                     </div>
+
                     <div>
-                    <p>Check out</p>
+                        <p>Check out</p>
                         <p>Add dates</p>
                     </div>
+
                     <div>
-                    <p>Guests</p>
+                        <p>Guests</p>
                         <p>Add guests</p>
                     </div>
+
                     <span className="search_nav">
                         <img className="search_icon" src="https://hamariweb.com/names/img/search_light.png" width="20px" height="20px"></img>
                     </span>

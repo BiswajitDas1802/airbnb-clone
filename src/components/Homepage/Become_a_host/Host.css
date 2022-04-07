@@ -1,0 +1,376 @@
+::-webkit-scrollbar {
+    display: none;
+    }
+#host_header{
+    width:100%;
+    height:560px;
+    border:1px solid black;
+    display: flex;
+}
+#host_header>div{
+    border:1px solid black;
+    width:50%;
+}
+#left_header{
+    color:white;
+    background-color: black;
+}
+#left_header>img{
+    margin-top: 8%;
+    margin-left: 8%;
+}
+#left_header>p{
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 12%;
+    padding-left: 5%;
+    padding-right: 5%;
+    line-height:1px;
+}
+#left_header>button{
+    margin-left: 40%;
+    padding-top:14px;
+    padding-bottom: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 8px;
+    margin-top: 3%;
+    border:1px solid transparent;
+    color:white;
+    background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
+}
+#header_image{
+    background-size: 100% 100%;
+    background-image: url("./african_girl.png");
+    
+}
+#header_image>img{
+    width:25%;
+    margin-top: 60%;
+    margin-left: 7%;
+}
+#header_image>h3{
+    color:white;
+    margin-left: 7%;
+}
+#host_anything>p{
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding-left:25%;
+    padding-right: 25%;
+    margin-top: 13%;
+}
+#anything_anywhere_photos{
+    display: flex;
+    gap:1%;
+    overflow-x: scroll;
+}
+
+#image_shadow{
+    width:400px;
+    height:370px;
+    border-radius: 5px;
+}
+#image_about{
+    font-size: 26px;
+    padding-right: 10%;
+    color:rgb(53, 52, 52);
+    margin-top: 10%;
+}
+#image_container>p:nth-child(4){
+    color:rgb(100, 99, 99)
+}
+#hide_about{
+    width:100%;
+    height:300px;
+    display: flex;
+    margin-top: -20%;
+}
+#hide_about>div{
+    width:13%;
+}
+#hide_about>div:nth-child(1){
+    color:white;
+    background-color: rgba(255, 255, 255, 0.489);
+}
+#hide_about>div:nth-child(7){
+    background-color:white;
+}
+#hide_about>div:nth-child(2){
+    
+    background-color: rgba(255, 255, 255, 0.489);
+}
+#hide_about>div:nth-child(6){
+
+    background-color: white;
+}
+#hide_about>div:nth-child(3){
+    background-color: rgba(255, 255, 255, 0.489);
+}
+#hide_about>div:nth-child(5){
+    background-color: white;
+}
+
+#hide_about>div:nth-child(4){
+    width:37%;
+}
+#earning{
+    padding:20px;
+    padding-bottom: 100px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align:center;
+    margin:auto;
+    justify-content: center;
+    margin-top: 10%;
+}
+#second_line{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#earning>div{
+    display: flex;
+}
+#earning>div>p{
+    color:rgb(112, 110, 110);
+    margin:auto
+}
+#a_for{
+    margin-left:100px;
+    color:blue;
+}
+#earning>div>select{
+    font-weight: 500;
+    border:1px solid transparent;
+    padding-top:-20px;
+    font-size: 60px;
+    text-decoration: underline;
+    margin-left: -20%;
+    
+}
+#ganaura_option{
+    font-size: 20px;
+    height:200px
+}
+#ganaura_option::selection{
+    background-color: black;
+    font-size: 15px;
+    padding: 30px;
+}
+#earning_potential{
+    text-align: center;
+    text-decoration: underline;
+    margin-top:-5%;
+    margin-bottom: 10%;
+}
+#Question_hosting{
+    width:93%;
+    height:650px;
+    margin:auto;
+    background-image: url("https://a0.muscache.com/im/pictures/93ef1829-62d1-4349-8b4a-b02ebc650a25.jpg?im_w=2560&im_q=highq");
+    background-size: 100% 100%;
+    font-size: 60px;
+    font-weight: 600;
+    color:white;
+    text-align: center;
+    line-height: 3px;
+    border-radius: 10px;
+}
+#leave_space{
+    height:150px
+}
+#Question_hosting>h2{
+   color:transparent;
+   margin-bottom: 30px;
+}
+#Question_hosting>button{
+    padding-left:50px;
+    padding-right: 50px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    border:1px solid transparent;
+    margin-top: 40px;
+}
+#aircover{
+    width:93%;
+    padding-bottom: 10%;
+    background-color: #f7f7f7;
+    margin:auto;
+    margin-top: 10%;
+    display: flex;
+    line-height: 3px;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+#aircover>div{
+    width:50%;
+}
+#aircover>div:nth-child(1){
+    margin-top: 17%;
+    margin-left: 7%;
+}
+#aircover>div>p{
+    font-size:32px
+}
+#a_top{
+    margin-top: 10%;
+}
+#aircover>div>button{
+    background-color: white;
+    padding-left:40px;
+    padding-right: 40px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    border:1px solid black;
+    margin-top: 40px;
+    color:rgb(37, 36, 36);
+}
+#a_sofa{
+    margin-top: 9%;
+}
+.denim{
+    background-image: url("./denim_girl.png");
+    background-size: 100% 100%;
+}
+#try_hosting{
+    width:100%;
+
+    height:570px;
+    display: flex;
+}
+#try_hosting>div{
+    width:50%;
+}
+#try_hosting>div:nth-child(2){
+    background-color: black;
+    color:white;
+}
+#try_hosting>div>p:nth-child(1){
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 16%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+#try_hosting>div>p:nth-child(2){
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size:18px;
+}
+#try_hosting>div>button{
+    margin-left: 40%;
+    padding-top:14px;
+    padding-bottom: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 23px;
+    padding-right: 23px;
+    border-radius: 8px;
+    margin-top:5%;
+    border:1px solid transparent;
+    color:white;
+    background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
+}
+
+@media only screen and (max-width: 950px){
+
+    #host_header{
+        width:100%;
+        height:500px;
+        display: flex;
+    }
+    #host_header>div{
+        width:100%;
+    }
+    #left_header{
+        color:white;
+        background-color: black;
+    }
+    #left_header>img{
+        margin-top: 4%;
+        margin-left: 8%;
+    }
+    #left_header>p{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 8%;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height:1px;
+    }
+    #left_header>button{
+        margin-left: 42%;
+        padding-top:14px;
+        padding-bottom: 14px;
+        font-size: 15px;
+        font-weight: 600;
+        padding-left: 23px;
+        padding-right: 23px;
+        border-radius: 8px;
+        margin-top: 3%;
+        border:1px solid transparent;
+        color:white;
+        background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
+
+    }
+
+    #header_image{
+        display: none;
+        background-image: url("./african_girl.png");
+        
+    }
+
+    #host_anything>p{
+        font-size: 60px;
+        font-weight: 600;
+        text-align: center;
+        padding-left:19%;
+        padding-right: 19%;
+        margin-top: 13%;
+    }
+
+    #hide_about{
+        width:100%;
+        height:300px;
+        display: flex;
+        margin-top: -30%;
+    }
+
+    #earning{
+        padding:20px;
+        padding-bottom: 100px;
+        font-size: 40px;
+        font-weight: 500;
+        text-align:center;
+        margin:auto;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    #earning>div>select{
+        font-weight: 300;
+        border:1px solid transparent;
+        padding-top:-20px;
+        font-size: 40px;
+        text-decoration: underline;
+        margin-left: -20%;
+        
+    }
+}
+
+@media only screen and (max-width: 744px){
+
+    
+}

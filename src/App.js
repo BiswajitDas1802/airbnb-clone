@@ -1,5 +1,6 @@
 
 import './App.css';
+import { Host } from './components/Homepage/Become_a_host/Host';
 
 import { Homepage } from './components/Homepage/LandingPage/Homepage';
 
@@ -10,7 +11,8 @@ function App() {
   return (
     <div className="App">
 
-        <Homepage/>
+        {/* <Homepage/> */}
+        <Host/>
 
       {/* <MapwithHotels/> */}
 
