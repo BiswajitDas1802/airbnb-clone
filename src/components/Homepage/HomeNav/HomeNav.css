@@ -65,11 +65,21 @@
 .host_decoration{
       color:white;
   }
+  .host_decoration:hover{
+
+        background-color: gray;
+        border-radius: 3px;
+  }
 .host_decoration.active{
       color:black;
       font-weight: 500;
       font-size: 14px;
   }
+.host_decoration.active:hover{
+
+    background-color: gray;
+    border-radius: 3px;
+}
 .right_nav.active{
       color:black;
       color:white;

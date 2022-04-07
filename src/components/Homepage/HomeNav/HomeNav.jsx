@@ -5,6 +5,7 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import {Hamburger} from "./Hamburger"
 import Styled from "styled-components"
+import { Link } from "react-router-dom"
 
 const Hamwrapper = Styled.div`
 
@@ -118,7 +119,7 @@ export const HomeNav = () => {
                         </div>
                         
                         <div className={become_host?`${styles.C2} ${styles.C1}`:`${styles.C1}`}>
-                            <p className={lower_head?"host_decoration active":"host_decoration"}>Become a host</p>
+                            <Link to="/become-a-host"> <p className={lower_head?"host_decoration active":"host_decoration"}>Become a host</p></Link>
                             <div className={globe_icon?"globe_logo active":"globe_logo"}></div>
 
                            
