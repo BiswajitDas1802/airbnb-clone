@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import {Hamburger} from "./Hamburger"
 import Styled from "styled-components"
 import { Link } from "react-router-dom"
+import { GuestList } from './GuestList';
 
 const Hamwrapper = Styled.div`
 
@@ -39,11 +40,32 @@ export const HomeNav = () => {
         height: "35%",
         paddingLeft: "10px",
       };
+      const Gueststyle = {
+        position: "absolute",
+        left: "50%",
+        width: "32%",
+        height: "50%",
+        marginTop:"200px",
+        bgcolor: "background.paper",
+        borderRadius:"10px",
+        fontFamily: "sans-serif",
+        maxHeight: "1024px",
+        overflowX: "hidden",
+        transform: "none",
+        transition: "transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms",
+        paddingLeft: "10px",
+      };  
 
-    const [display, setDisplay] = useState(false);
+    const [displayHam, setDisplayHam] = useState(false);
+    const [displayGuest, setDisplayGuest] = useState(false);
+    const  [guest, setGuest] = useState(0);
+   
 
-    const  handlePopin =()=> setDisplay(true);
-    const  handlePopout =()=> setDisplay(false);
+    const  handleHamPopin =()=> setDisplayHam(true);
+    const  handleHamPopout =()=> setDisplayHam(false);
+
+    const  handleGuestPopin =()=> setDisplayGuest(true);
+    const  handleGuestPopout =()=> setDisplayGuest(false);
 
     const [homeNav,setHomeNav]=useState(false)
     const [airbnb_logo,setLogo]=useState(false)
@@ -124,7 +146,7 @@ export const HomeNav = () => {
 
                            
 
-                                <Hamwrapper onClick={handlePopin}>
+                                <Hamwrapper onClick={handleHamPopin}>
                                     <div>
                                         <img style={{paddingTop:"10px",marginLeft:"10px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe2qzjGHx362VfxQWKWwi2GCEoyqUnsRIm9jEF2oIlWx6Z76KjowacdQTq8s4UfonUSnA&usqp=CAU" width="20px"></img>
                                     </div>
@@ -141,22 +163,22 @@ export const HomeNav = () => {
 
                     <div className="location_nav">
                         <p>Location</p>
-                        <p>Where are you going?</p>
+                        <p><input type="text" placeholder='Where are you going?' style={{border:"none",outline:"none"}}/></p>
                     </div>
 
                     <div>
                         <p>Check in</p>
-                        <p>Add dates</p>
+                        <p><input type="date"  style={{border:"none" ,outline:"none"}}/></p>
                     </div>
 
                     <div>
                         <p>Check out</p>
-                        <p>Add dates</p>
+                        <p><input type="date"  style={{border:"none" ,outline:"none"}}/></p>
                     </div>
 
-                    <div>
+                    <div onClick={handleGuestPopin}>
                         <p>Guests</p>
-                        <p>Add guests</p>
+                        <p>{guest===0?"Add guests":guest +" guests"}</p>
                     </div>
 
                     <span className="search_nav">
@@ -175,13 +197,24 @@ export const HomeNav = () => {
         </div>
 
         <Modal
-            open={display}
-            onClose={handlePopout} 
+            open={displayHam}
+            onClose={handleHamPopout} 
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
             <Box sx={hamstyle}>
               <Hamburger/>
+            </Box>
+        </Modal>
+
+        <Modal
+            open={displayGuest}
+            onClose={handleGuestPopout} 
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+        >
+            <Box sx={Gueststyle}>
+              <GuestList guest={guest} setGuest ={setGuest} />
             </Box>
         </Modal>
 
