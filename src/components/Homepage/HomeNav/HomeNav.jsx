@@ -20,6 +20,7 @@ border:1px solid transparent;
 display: flex;
 color:black;
 border:1px solid rgb(204, 195, 195);
+cursor:pointer;
 
 `
 
@@ -59,6 +60,7 @@ export const HomeNav = () => {
     const [displayHam, setDisplayHam] = useState(false);
     const [displayGuest, setDisplayGuest] = useState(false);
     const  [guest, setGuest] = useState(0);
+    const  [pet, setPet] = useState(0);
    
 
     const  handleHamPopin =()=> setDisplayHam(true);
@@ -168,17 +170,17 @@ export const HomeNav = () => {
 
                     <div>
                         <p>Check in</p>
-                        <p><input type="date"  style={{border:"none" ,outline:"none"}}/></p>
+                        <p><input type="date" min="2022-04-09" style={{border:"none" ,outline:"none"} }/></p>
                     </div>
 
                     <div>
                         <p>Check out</p>
-                        <p><input type="date"  style={{border:"none" ,outline:"none"}}/></p>
+                        <p><input type="date"  style={{border:"none" ,outline:"none"}} min="2022-04-09"/></p>
                     </div>
 
-                    <div onClick={handleGuestPopin}>
-                        <p>Guests</p>
-                        <p>{guest===0?"Add guests":guest +" guests"}</p>
+                    <div onClick={handleGuestPopin} style={{cursor:"pointer"}}>
+                        <p >Guests</p>
+                        <p>{guest===0?"Add guests":guest +" guests"} {pet===0?"":","+pet+" pets"}</p>
                     </div>
 
                     <span className="search_nav">
@@ -214,7 +216,7 @@ export const HomeNav = () => {
             aria-describedby="modal-modal-description"
         >
             <Box sx={Gueststyle}>
-              <GuestList guest={guest} setGuest ={setGuest} />
+              <GuestList guest={guest} setGuest ={setGuest} pet={pet} setPet={setPet}/>
             </Box>
         </Modal>
 
