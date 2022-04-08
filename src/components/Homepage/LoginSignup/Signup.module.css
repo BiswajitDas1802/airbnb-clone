@@ -1,0 +1,116 @@
+.a_signupContainer{
+    width:90%;
+    height:auto;
+    border:1px solid rgb(218, 214, 214);
+    margin:auto; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+}
+.a_welcome_inside_container>p:nth-child(1){
+    font-size: 22px;
+    font-weight: 600;
+}
+.a_welcome_inside_container{
+    width:92%;
+    margin:auto;
+}
+.a_welcome_inside_container>p:nth-child(3){
+    font-size:12px;
+    color:rgb(74, 73, 73);
+}
+.a_welcome_inside_container>p:nth-child(4){
+    font-size:12px;
+    font-weight: 500;
+    margin-top: -2%;
+}
+.aheader{
+    width:100%;
+    border-bottom:1px solid rgb(229, 226, 226);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.aheader>img{
+    margin-left: 4%;
+    margin-top: 4%;
+}
+.aheader>p{
+    font-weight: 700;
+}
+.a_country{
+    border:1px solid rgb(177, 174, 174);
+    border-bottom: 1px solid transparent;
+    width:100%;
+    line-height: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.a_country>p{
+    font-size: 13px;
+    color:rgb(140, 136, 136);
+    margin-left: 3%;
+}
+.a_select{
+    width:100%;
+    padding-bottom:10px;
+    border:1px solid transparent;
+    font-size: 15px;
+    padding-left: 2%;
+}
+.a_phone>input{
+    padding:18px;
+    width:93%;
+    border:1px solid rgb(177, 174, 174);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+}
+.a_phone>input:focus{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.privacyPolicy{
+    font-weight: 500;
+    text-decoration: underline;
+}
+.continue{
+    width:100%;
+    margin:auto;
+    text-align: center;
+    color:white;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(to right, rgb(217, 4, 78), rgb(250, 20, 119));
+    padding-top:1px;
+    padding-bottom: 1px;
+    margin-bottom: 7%;
+}
+.or{
+    margin-top: -5%;
+    margin-left:47%;
+    width:7%;
+    text-align: center;
+    background-color: white;
+}
+.a_signup_options{
+    border:1px solid black;
+    display: flex;
+    border-radius:10px;
+    margin-bottom:15px;
+    justify-content: space-around;
+    gap:19%;
+}
+.a_signup_options>img{
+    margin-top: 3%;
+}
+
+.login_option_right_space{
+    width:20px;
+
+}
+.google_div{
+    width:400px;
+    height:100px;
+}

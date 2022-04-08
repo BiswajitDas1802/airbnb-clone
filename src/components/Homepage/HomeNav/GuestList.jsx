@@ -90,7 +90,7 @@ export const GuestList = ({guest,setGuest}) => {
 
 
         </div>
-
+        <hr/>
         <div style={{display:"Flex"}}>
           <div>
           <Boldwrapper>
@@ -108,7 +108,7 @@ export const GuestList = ({guest,setGuest}) => {
           </div>
 
         </div>
-
+        <hr/>
         <div style={{display:"Flex"}}>
           <div>
             <Boldwrapper>
@@ -126,7 +126,7 @@ export const GuestList = ({guest,setGuest}) => {
           </div>
 
         </div>
-
+        <hr/>
         <div style={{display:"Flex"}}>
           <div>
             <Boldwrapper>

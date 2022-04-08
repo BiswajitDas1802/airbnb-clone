@@ -44,7 +44,7 @@ export const HomeNav = () => {
         position: "absolute",
         left: "50%",
         width: "32%",
-        height: "50%",
+        height: "auto",
         marginTop:"200px",
         bgcolor: "background.paper",
         borderRadius:"10px",
