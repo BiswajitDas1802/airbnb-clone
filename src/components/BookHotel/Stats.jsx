@@ -10,7 +10,7 @@ const OuterDiv = styled.div`
     width100%;
     display:flex;
     margin-top:40px;
-    @media (max-width:400px){
+    @media (max-width:800px){
         flex-wrap:wrap;
         &>div{
             width:100%;
@@ -100,7 +100,7 @@ const LeftDiv = styled.div`
         margin-bottom:40px;
     }
 
-    @media (max-width:400px){
+    @media (max-width:800px){
         .ss{
             // border:1px solid red;
             display:flex;
@@ -129,6 +129,9 @@ const Avatar = styled.div`
         height:100%;
         border-radius:50%;
     }
+`
+const RightDiv = styled.div`
+    
 `
 const Stats = ({img}) => {
   return (
@@ -199,8 +202,8 @@ const Stats = ({img}) => {
             </div>
             <hr />
         </LeftDiv>
-        <div>
-        </div>
+        <RightDiv>
+        </RightDiv>
     </OuterDiv>
   )
 }

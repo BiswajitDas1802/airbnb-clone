@@ -4,6 +4,8 @@ import { RightMap } from "./Map";
 import StyledCard from "./StyledCard";
 import { getCenter } from "geolib";
 import page from "./img/page.png"
+import {lonavla} from "./star"
+import { useSelector } from "react-redux";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -87,12 +89,14 @@ const Top = styled.div`
   }
 `;
 export const MapwithHotels = () => {
-  const [hotel, setHotel] = useState(null);
+
+  const data = useSelector(state=>state.searchRes)
+  const [hotel, setHotel] = useState(data);
 
 
-  useEffect(() => {
-    getHotels();
-  }, []);
+  // useEffect(() => {
+  //   getHotels();
+  // }, []);
 
   const getHotels = () => {
     fetch("https://fake-server-app-biswa.herokuapp.com/hotels")
@@ -117,7 +121,7 @@ export const MapwithHotels = () => {
                 <p>300+ stays in Lonavla</p>
                 <h4>More than 8,000 guests have stayed in Lonavla. On average they rated their stays 4.6 out of 5stars</h4>
             </Infodiv>
-          {hotel ? hotel.lonavla.map((item) => <StyledCard item={item} />) : ""}
+          {hotel.map((item) => <StyledCard item={item} />) }
             <div>
                 <img width="100%" src={page}/>
             </div>

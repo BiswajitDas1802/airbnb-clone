@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Description from "./Description";
 
+
 const InfoContainer = styled.div`
   width: 95%;
   height: 200px;
@@ -97,6 +98,9 @@ const StyledCard = ({ item }) => {
     }
   };
 
+  
+
+
   const { img, title, location, description, star, price, total } = item;
   return (
     <InfoContainer onMouseEnter={handleHover} onMouseLeave={handleLeave}>
@@ -111,7 +115,7 @@ const StyledCard = ({ item }) => {
           </button>
         </BtnDiv>
       </div>
-      <Description item={item}/>
+      <Description  item={item}/>
     </InfoContainer>
   );
 };

@@ -4,6 +4,7 @@ import prog from './bookHotelimg/progress.png'
 import styled from 'styled-components'
 import ReviewCont from './ReviewCont'
 import map from './bookHotelimg/map.png'
+import { useNavigate } from 'react-router-dom'
 
 const StyledImg = styled.div`
     width:100%;
@@ -12,7 +13,7 @@ const StyledImg = styled.div`
         width:100%;
     }
 
-    @media (max-width:400px){
+    @media (max-width:800px){
         display:none;
     }
     
@@ -55,6 +56,9 @@ const HostDetails = styled.div`
             border-radius:50%;
         }
     }
+    @media (max-width:800px){
+        width:100%;
+    }
 `
 
 const Reviews = () => {
@@ -81,6 +85,10 @@ const Reviews = () => {
 "name":"Swapneel",
 "date":"March 2022"
 }]
+
+const navigate = useNavigate()
+
+
   return (
     <div >
         <h2>
@@ -119,7 +127,7 @@ const Reviews = () => {
             <p>Response rate: 100%</p>
             <p>Response time: within an hour</p>
             </div>
-        <Revbutton style={{width:"100px"}}>Contact Host</Revbutton>
+        <Revbutton  onClick={()=>navigate("/payment")} style={{width:"100px"}}>Contact Host</Revbutton>
         </HostDetails>
     </div>
   )
