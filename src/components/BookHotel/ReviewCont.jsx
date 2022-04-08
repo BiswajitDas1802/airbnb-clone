@@ -22,7 +22,7 @@ import styled from 'styled-components'
     h3,p{
         margin:0;
     }
-    @media (max-width:400px){
+    @media (max-width:800px){
         width:100%;
     }
 `

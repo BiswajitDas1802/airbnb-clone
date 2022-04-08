@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@date-io/date-fns": "^2.13.1",
+    "@date-io/luxon": "^2.13.1",
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
+    "@mui/lab": "^5.0.0-alpha.76",
     "@mui/material": "^5.6.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -15,8 +18,10 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-map-gl": "^7.0.10",
+    "react-redux": "^7.2.8",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "redux": "^4.1.2",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },

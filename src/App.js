@@ -5,7 +5,12 @@ import { Homepage } from './components/Homepage/LandingPage/Homepage';
 import { MapwithHotels } from './components/Mapwithhotels/MapwithHotels';
 import {Routes , Route} from 'react-router-dom'
 import { BookHotel } from './components/BookHotel/BookHotel';
+
+import { HomeNav } from './components/Homepage/HomeNav/HomeNav';
+import Payment from './components/Payment/Payment';
+
 import { Singup } from './components/Homepage/LoginSignup/Signup';
+
 
 
 function App() {
@@ -17,8 +22,10 @@ function App() {
         <Route  path="/lonavla" element={<MapwithHotels/>}/>
         <Route path="bookhotel" element={<BookHotel/>}/>
         <Route path="/become-a-host" element={<Host/>}/>
+        <Route path = "/payment" element={<Payment/>}/>
         <Route path="/SignUp" element={<Singup/>}/>
         <Route path="/Login" element={<Singup/>}/>
+
       </Routes>
     </div>
   
