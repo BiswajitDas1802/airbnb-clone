@@ -17,6 +17,9 @@ const Wrapper = styled.div`
 width:90%;
 display:flex;
 flex-wrap:wrap;
+@media (max-width:680px){
+  
+}
 `
 const ExperienceWrap = styled.div`
 width:100%;

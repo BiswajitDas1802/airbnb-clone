@@ -8,7 +8,7 @@ const InfoContainer = styled.div`
   padding: 20px;
  
   border-bottom:1px solid #ccc;
-
+  min-width:300px;
   @media (max-width:500px){
     flex-wrap:wrap;
     height:fit-content;
