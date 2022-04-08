@@ -6,6 +6,7 @@ import { MapwithHotels } from './components/Mapwithhotels/MapwithHotels';
 import {Routes , Route} from 'react-router-dom'
 import { BookHotel } from './components/BookHotel/BookHotel';
 import { HomeNav } from './components/Homepage/HomeNav/HomeNav';
+import Payment from './components/Payment/Payment';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route  path="/lonavla" element={<MapwithHotels/>}/>
         <Route path="bookhotel" element={<BookHotel/>}/>
         <Route path="/become-a-host" element={<Host/>}/>
+        <Route path = "/payment" element={<Payment/>}/>
       </Routes>
 
     </div>

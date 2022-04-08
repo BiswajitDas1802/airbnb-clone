@@ -5,7 +5,7 @@ const Wrap = styled.div`
     width:100%;
     display:flex;
 
-    @media (max-width:400px){
+    @media (max-width:800px){
         display:none;
     }
 

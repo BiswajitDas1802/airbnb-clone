@@ -4,6 +4,7 @@ import {starr} from '../Mapwithhotels/star'
 import ImgGrid from './ImgGrid'
 import Reviews from './Reviews'
 import Stats from './Stats'
+import {useSelection, useSelector} from 'react-redux'
 
 const Outer = styled.div`
     width:100%;
@@ -15,7 +16,7 @@ const Wrapper = styled.div`
     // border:1px solid red;
     height:100vh;
     
-    @media (max-width:400px){
+    @media (max-width:800px){
         width:95%;
     }
 `
@@ -55,7 +56,7 @@ const MobImgGrid = styled.div`
             height:100%:
         
        }
-       @media(max-width:400px){
+       @media(max-width:800px){
            display:flex;
        }
 
@@ -64,23 +65,13 @@ const MobImgGrid = styled.div`
 
 export const BookHotel = () => {
 
-const data= {
-    "img":[ "https://a0.muscache.com/im/pictures/8ec4dc38-bbbe-4c39-a069-ba2bc7eba9fa.jpg?im_w=720","https://a0.muscache.com/im/pictures/miso/Hosting-551238307613226909/original/ac152671-4f60-4a2a-bb84-daec81f57749.jpeg?im_w=720","https://a0.muscache.com/im/pictures/19a60ea8-6883-4b05-83fd-10a96856a22b.jpg?im_w=720","https://a0.muscache.com/im/pictures/19a60ea8-6883-4b05-83fd-10a96856a22b.jpg?im_w=720","https://a0.muscache.com/im/pictures/8ec4dc38-bbbe-4c39-a069-ba2bc7eba9fa.jpg?im_w=720"],
-    "location": "2BHK with Beautiful Design and Open Outdoor spa",
-    "title": "5 Star Luxury Apartment",
-    "description": "3 guest · 1 bedroom · 1 bed · 1.5 shared bthrooms · Wifi · Kitchen · Free parking · Washing Machine",
-    "star": 3.85,
-    "price": "₹4,529 /night",
-    "total": "£650 total",
-    "coord": [18.752161095707315,73.40073586262665]
-     
-  }
+const data=useSelector(state=>state.hotel);
 
   return (
     <Outer>
         <Wrapper>
             <MobImgGrid>
-                {data.img.map((item,i)=><div key={i}><img src={item}/></div>)}
+                {data?data.img.map((item,i)=><div key={i}><img src={item}/></div>):""}
             </MobImgGrid>
             <HeaderDiv>
                 <div>
