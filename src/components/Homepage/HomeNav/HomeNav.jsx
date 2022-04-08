@@ -120,6 +120,11 @@ export const HomeNav = () => {
             setScrollSearch(false)
       }
 
+      const handleGuestX =()=>{
+
+        setPet(0);
+        setGuest(0);
+      }
 
 
   return (
@@ -181,8 +186,9 @@ export const HomeNav = () => {
                     <div onClick={handleGuestPopin} style={{cursor:"pointer"}}>
                         <p >Guests</p>
                         <p>{guest===0?"Add guests":guest +" guests"} {pet===0?"":","+pet+" pets"}</p>
+                        
                     </div>
-
+                    {guest>0 || pet>0?<b onClick={handleGuestX} style={{marginTop:"30px",marginRight:"30px",fontSize:"20px"}}>x</b>  :   <p></p>}
                     <span className="search_nav">
                         <img className="search_icon" src="https://hamariweb.com/names/img/search_light.png" width="20px" height="20px"></img>
                     </span>

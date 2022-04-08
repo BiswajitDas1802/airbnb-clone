@@ -67,6 +67,9 @@ export const GuestList = ({guest,setGuest,pet,setPet}) => {
   const handleAddPet =()=>{
     setPet(pet+1);
   }
+
+
+  
   return (
     <div>
         <div style={{display:"Flex"}}>
