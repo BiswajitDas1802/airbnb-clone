@@ -16,7 +16,12 @@ const handleNavigate =(data)=>{
     dispatch(searchHotel(data))
     navigate("/search")
 }
-const user = useSelector(state=>state.currUser)
+const user = useSelector(state=>state.currUser);
+
+const ShowPage =()=>{
+    navigate("/experience")
+}
+
 
 
   return (
@@ -39,7 +44,7 @@ const user = useSelector(state=>state.currUser)
                     </div>
                    
                     <div className={Styles.flexible_button_box}>
-                      <h4 className={Styles.flexible_button}>I'm flexible</h4>
+                      <h4 className={Styles.flexible_button} onClick={ShowPage}>I'm flexible</h4>
                     </div>
               </div>
           </div>

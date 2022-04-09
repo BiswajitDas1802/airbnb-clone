@@ -221,7 +221,7 @@ const searchBnb=()=>{
 
                     <span  onClick={searchBnb} className="search_nav">
 
-                    {guest>0 || pet>0?<b onClick={handleGuestX} style={{marginTop:"30px",marginRight:"30px",fontSize:"20px"}}>x</b>  :   <p></p>}
+                    {guest>0 || pet>0?<b onClick={handleGuestX} style={{fontSize:"25px",marginLeft:"-13px",marginTop:"10px"}}>x</b>  :   <p></p>}
 
                         <img className="search_icon" src="https://hamariweb.com/names/img/search_light.png" width="20px" height="20px"></img>
                     </span>

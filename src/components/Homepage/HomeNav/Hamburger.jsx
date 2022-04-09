@@ -31,14 +31,19 @@ export const Hamburger = () => {
   console.log(user)
     const  handleLogInPopin =()=> setDisplayLogIn(true);
     const  handleLogInPopout =()=> setDisplayLogIn(false);
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
+    const handleSignOut =()=>{
+
+      dispatch(googleSignOut());
+      handleHamPopout();
+      alert("LogOut Successful")
+      
+    }
   return (
     <div>
-        {user?<p onClick={()=>{dispatch(googleSignOut())
-          handleHamPopout()
-        }} style={{cursor:"pointer"}}><b>LogOut</b></p>:<p onClick={handleLogInPopin} style={{cursor:"pointer"}}><b>SignUp</b></p>}
-        {user?"":<p onClick={handleLogInPopin} style={{cursor:"pointer"}}>Login</p>}
+        {userr?<p onClick={()=>handleSignOut()} style={{cursor:"pointer"}}><b>LogOut</b></p>:<p onClick={handleLogInPopin} style={{cursor:"pointer"}}><b>SignUp</b></p>}
+        {userr?"":<p onClick={handleLogInPopin} style={{cursor:"pointer"}}>Login</p>}
             <hr/>
         <p>Host your home</p>
         <p>Host an experience</p>
