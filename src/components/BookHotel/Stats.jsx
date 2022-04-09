@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import ss1 from './bookHotelimg/ss1.png'
 import ss2 from './bookHotelimg/ss2.png'
 import Reviews from './Reviews'
+import TopRight from './TopRight'
 
 
 const OuterDiv = styled.div`
@@ -131,7 +132,10 @@ const Avatar = styled.div`
     }
 `
 const RightDiv = styled.div`
-    
+    width:45%;
+    position: relative;
+    display:flex;
+    justify-content:center;
 `
 const Stats = ({img}) => {
   return (
@@ -203,6 +207,7 @@ const Stats = ({img}) => {
             <hr />
         </LeftDiv>
         <RightDiv>
+            <TopRight/>
         </RightDiv>
     </OuterDiv>
   )

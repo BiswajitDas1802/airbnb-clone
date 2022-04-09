@@ -19,12 +19,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Homepage/>}/>
-        <Route  path="/lonavla" element={<MapwithHotels/>}/>
+        <Route  path="/search" element={<MapwithHotels/>}/>
         <Route path="bookhotel" element={<BookHotel/>}/>
         <Route path="/become-a-host" element={<Host/>}/>
         <Route path = "/payment" element={<Payment/>}/>
-        <Route path="/SignUp" element={<Singup/>}/>
-        <Route path="/Login" element={<Singup/>}/>
+        {/* <Route path="/SignUp" element={<Singup/>}/>
+        <Route path="/Login" element={<Singup/>}/> */}
 
       </Routes>
     </div>

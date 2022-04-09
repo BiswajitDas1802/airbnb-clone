@@ -5,4 +5,7 @@
   pointer-events: none;
 }
 
+button{
+  cursor: pointer;
+}
 
