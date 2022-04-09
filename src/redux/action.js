@@ -72,7 +72,7 @@ export const googleSignin=()=>{
         .then((user)=>{
             dispatch(googleSigninSuccess(user))
         })
-        .then((error)=>{dispatch(googleSigninFail(error.message))})
+        .then((error)=>{dispatch(googleSigninFail(error))})
     }
 }
 
@@ -84,7 +84,9 @@ export const googleSignOut=()=>{
             dispatch(googleLogOut())
             
         })
-        .then((error)=>{dispatch(googleSigninFail(error))})
+        .then(()=>alert("LogOut Successful"))
+        .catch((error)=>{dispatch(googleSigninFail(error))})
+        
     }
 }
 

@@ -116,12 +116,13 @@
         margin-top: 7px;
         margin-bottom: 7px;
         margin-right: 10px;
-        }
+        }        
 .search_icon{
         padding-left:15px ;
-        padding-top: 15px;
+        /* padding-top: 6px; */
         padding-right: 15px;
         padding-bottom:20px ;
+        cursor: pointer;
         }
 .lower_header>div{
         width:30%;
