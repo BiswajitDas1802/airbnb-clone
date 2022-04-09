@@ -1,9 +1,30 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Styles from "./Signup.module.css"
+import {useDispatch} from 'react-redux'
+import {googleSignin} from '../../../redux/action'
 
-export const Singup=()=>
-{
+import Modal from "@mui/material/Modal";
+import OtpInput from 'react-otp-input';
+
+
+
+
+// import {auth} from "../../../firebase.js"
+
+export const Singup=()=>{
+
+const [open,setOpen] = useState(false)
+
+const dispatch = useDispatch()
+const handleSignIn=()=>{
+	dispatch(googleSignin())
+}
+
+const handleRecaptcha=()=>(setOpen(!open))
+	
+
+
     return(
         <>
         <div className={Styles.a_signupContainer}>
@@ -242,17 +263,25 @@ export const Singup=()=>
             </div>
             <p>We'll call or text you to confirm your number. Standard message and data rates apply.</p>
             <p className={Styles.privacyPolicy}>Privacy Policy</p>
-            <div className={Styles.continue}>
+            <div onClick={handleRecaptcha} className={Styles.continue}>
                 <p>Continue</p>
             </div>
+			<div id="recaptcha-container"/>
             <hr/>
+			{/* <Modal open={open}
+				onClose={handleRecaptcha}
+				// aria-labelledby="modal-modal-title"
+				// aria-describedby="modal-modal-description"
+			>
+			<h1>Hiii</h1>	 <OtpInput numInputs={4}/> 
+			</Modal> */}
             <p className={Styles.or}>or</p>
             <div style={{display:"flex"}} className={Styles.a_signup_options}>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" width="20px" height="20px"></img>
                 <p>Continue with facebook</p>
                 <div className={Styles.login_option_right_space}></div>
                 </div>
-                <div className={Styles.a_signup_options}>
+                <div onClick={handleSignIn} className={Styles.a_signup_options}>
 				<img src="https://upload.wikimedia.org/wikipedia/commons/archive/5/53/20210618182605%21Google_%22G%22_Logo.svg" width="20px" height="20px"></img>
 					<p>Continue with Google</p>
                     <div className={Styles.login_option_right_space}></div>

@@ -4,7 +4,7 @@ import Styles from "./Homepage.module.css"
 import { HomeNav } from '../HomeNav/HomeNav'
 import {useNavigate} from "react-router-dom"
 import { searchHotel } from '../../../redux/action'
-import { useDispatch } from 'react-redux'
+import { useDispatch,useSelector } from 'react-redux'
 import {lonavla,Alibagh,karjat,Calangute} from '../../Mapwithhotels/star'
 
 
@@ -14,9 +14,9 @@ const dispatch = useDispatch()
 const navigate = useNavigate()
 const handleNavigate =(data)=>{
     dispatch(searchHotel(data))
-    navigate("/lonavla")
+    navigate("/search")
 }
-
+const user = useSelector(state=>state.currUser)
 
 
   return (

@@ -5,6 +5,7 @@ import ImgGrid from './ImgGrid'
 import Reviews from './Reviews'
 import Stats from './Stats'
 import {useSelection, useSelector} from 'react-redux'
+import {Randomnav} from '../Randomnav'
 
 const Outer = styled.div`
     width:100%;
@@ -68,6 +69,9 @@ export const BookHotel = () => {
 const data=useSelector(state=>state.hotel);
 
   return (
+    <>
+    <Randomnav/>
+    <hr />
     <Outer>
         <Wrapper>
             <MobImgGrid>
@@ -87,5 +91,6 @@ const data=useSelector(state=>state.hotel);
             <Reviews/>
         </Wrapper>
     </Outer>
+    </>
   )
 }

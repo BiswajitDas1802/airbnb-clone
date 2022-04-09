@@ -24,7 +24,7 @@ color:grey;
 
 
 
-export const GuestList = ({guest,setGuest}) => {
+export const GuestList = ({guest,setGuest,st,setSt}) => {
 
   const  [adults, setAdults]=useState(0);
   const  [child, setChild] = useState(0);

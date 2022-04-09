@@ -3,6 +3,9 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import { Singup } from '../LoginSignup/Signup';
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { signout,auth } from '../../../firebase';
+import { googleSignOut } from '../../../redux/action';
 
 export const Hamburger = () => {
 
@@ -23,13 +26,19 @@ export const Hamburger = () => {
   };  
 
   const [displayLogIn, setDisplayLogIn] = useState(false);
-
+  const userr = useSelector(state=>state.currUser)
+  const [user,setUser] = useState(userr);
+  console.log(user)
     const  handleLogInPopin =()=> setDisplayLogIn(true);
     const  handleLogInPopout =()=> setDisplayLogIn(false);
+    const dispatch = useDispatch()
+
   return (
     <div>
-        <p onClick={handleLogInPopin} style={{cursor:"pointer"}}><b>SignUp</b></p>
-        <p onClick={handleLogInPopin} style={{cursor:"pointer"}}>Login</p>
+        {user?<p onClick={()=>{dispatch(googleSignOut())
+          handleHamPopout()
+        }} style={{cursor:"pointer"}}><b>LogOut</b></p>:<p onClick={handleLogInPopin} style={{cursor:"pointer"}}><b>SignUp</b></p>}
+        {user?"":<p onClick={handleLogInPopin} style={{cursor:"pointer"}}>Login</p>}
             <hr/>
         <p>Host your home</p>
         <p>Host an experience</p>

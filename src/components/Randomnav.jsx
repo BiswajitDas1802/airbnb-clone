@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Homepage/HomeNav/HomeNav.css"
 import Styled from "styled-components"
+import {useNavigate} from "react-router-dom"
 
 export const Randomnav = () => {
     const Hamwrapper = Styled.div`
@@ -17,9 +18,11 @@ export const Randomnav = () => {
     border:1px solid rgb(204, 195, 195);
 
     `
+    const navigate = useNavigate()
+
   return (
-    <div className="upper_header">
-        <div style={{marginLeft:"-1%",marginTop:"1%"}}>
+    <div style={{width:"75%"}} className="upper_header">
+        <div onClick={()=>navigate("/")} style={{marginLeft:"-1%",marginTop:"1%"}}>
                 <div className="logo active"></div>
         </div>
 

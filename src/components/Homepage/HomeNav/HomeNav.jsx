@@ -5,9 +5,11 @@ import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import {Hamburger} from "./Hamburger"
 import Styled from "styled-components"
-import { Link } from "react-router-dom"
+import { Link, Navigate,useNavigate } from "react-router-dom"
 import { GuestList } from './GuestList';
-
+import { guestbb, search, searchHotel } from '../../../redux/action';
+import { lonavla,Alibagh } from '../../Mapwithhotels/star';
+import {useDispatch} from 'react-redux'
 const Hamwrapper = Styled.div`
 
 margin-top:7px;
@@ -59,13 +61,20 @@ export const HomeNav = () => {
     const [displayHam, setDisplayHam] = useState(false);
     const [displayGuest, setDisplayGuest] = useState(false);
     const  [guest, setGuest] = useState(0);
+    const [st,setSt] = useState({
+        "search":"",
+        "start":"",
+        "end":""
+    })
    
 
     const  handleHamPopin =()=> setDisplayHam(true);
     const  handleHamPopout =()=> setDisplayHam(false);
 
     const  handleGuestPopin =()=> setDisplayGuest(true);
-    const  handleGuestPopout =()=> setDisplayGuest(false);
+    const  handleGuestPopout =()=> {setDisplayGuest(false)
+        setSt({...st,[guests]:guest})
+    }
 
     const [homeNav,setHomeNav]=useState(false)
     const [airbnb_logo,setLogo]=useState(false)
@@ -75,7 +84,7 @@ export const HomeNav = () => {
     const [navmiddle,setNavmiddle]=useState(false)
     const [scroll_search,setScrollSearch]=useState(false)
 
-
+    const navigate = useNavigate()
 
     const changeNavbar=()=>{
 
@@ -119,6 +128,18 @@ export const HomeNav = () => {
       }
 
 
+const changeInput=(e)=>{
+    const {type,value,name} = e.target
+    setSt({...st,[name]:value})
+}
+const dispatch = useDispatch()
+const searchBnb=()=>{
+    dispatch(search(st))
+    dispatch(guestbb(guest))
+    let dt = st.search=="lonavla"?lonavla:st.search=="alibagh"?Alibagh:st.search=="calangute"?Calangute:karjat
+    dispatch(searchHotel(dt))
+    navigate('/search')
+}
 
   return (
     <>
@@ -163,17 +184,17 @@ export const HomeNav = () => {
 
                     <div className="location_nav">
                         <p>Location</p>
-                        <p><input type="text" placeholder='Where are you going?' style={{border:"none",outline:"none"}}/></p>
+                        <p><input onChange={changeInput} name="search" type="text" placeholder='Where are you going?' style={{border:"none",outline:"none"}}/></p>
                     </div>
 
                     <div>
                         <p>Check in</p>
-                        <p><input type="date"  style={{border:"none" ,outline:"none"}}/></p>
+                        <p><input type="date" name="start" onChange={changeInput}  style={{border:"none" ,outline:"none"}}/></p>
                     </div>
 
                     <div>
                         <p>Check out</p>
-                        <p><input type="date"  style={{border:"none" ,outline:"none"}}/></p>
+                        <p><input type="date" name="end" onChange={changeInput}  style={{border:"none" ,outline:"none"}}/></p>
                     </div>
 
                     <div onClick={handleGuestPopin}>
@@ -181,7 +202,7 @@ export const HomeNav = () => {
                         <p>{guest===0?"Add guests":guest +" guests"}</p>
                     </div>
 
-                    <span className="search_nav">
+                    <span onClick={searchBnb} className="search_nav">
                         <img className="search_icon" src="https://hamariweb.com/names/img/search_light.png" width="20px" height="20px"></img>
                     </span>
                 </div>
@@ -198,12 +219,13 @@ export const HomeNav = () => {
 
         <Modal
             open={displayHam}
+             
             onClose={handleHamPopout} 
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-            <Box sx={hamstyle}>
-              <Hamburger/>
+            <Box sx={hamstyle} handleHamPopout={handleHamPopout}>
+              <Hamburger displayHam={displayHam} setDisplayHam={setDisplayHam}/>
             </Box>
         </Modal>
 
@@ -214,7 +236,7 @@ export const HomeNav = () => {
             aria-describedby="modal-modal-description"
         >
             <Box sx={Gueststyle}>
-              <GuestList guest={guest} setGuest ={setGuest} />
+              <GuestList guest={guest} setSt={setSt} st={st} setGuest ={setGuest} />
             </Box>
         </Modal>
 
