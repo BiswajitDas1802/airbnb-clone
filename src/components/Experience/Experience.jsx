@@ -13,6 +13,7 @@ import {
     Route,
     Link
 } from "react-router-dom"
+import { Footer } from '../Homepage/Footer/footer'
 const Wrapper = styled.div`
 width:90%;
 display:flex;
@@ -52,7 +53,7 @@ const filterItem = (val) => {
           
             
           </Wrapper>
-         
+          <Footer/>
         </ExperienceWrap>
         
       );

@@ -6,6 +6,9 @@ import { getCenter } from "geolib";
 import page from "./img/page.png"
 import {lonavla} from "./star"
 import { useSelector } from "react-redux";
+import { Footer } from "../Homepage/Footer/footer";
+import { HomeNav } from "../Homepage/HomeNav/HomeNav";
+import { Randomnav } from "../Randomnav";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -83,6 +86,7 @@ const Top = styled.div`
   display: flex;
   justify-content:space-evenly;
   padding:20px 0px;
+  border-bottom:1px solid #cfcbcb;
 
   @media (max-width: 380px) {
       overflow-X:scroll;
@@ -110,6 +114,7 @@ export const MapwithHotels = () => {
 
   return (
     <div>
+    <Randomnav/>
       <Top >
           <RoundBtn>Price<select></select></RoundBtn>
           <RoundBtn>Type of place<select></select></RoundBtn>
@@ -117,10 +122,14 @@ export const MapwithHotels = () => {
       </Top>
       <Wrapper>
         <HotelDiv className="left-list">
+     
+
             <Infodiv>
                 <p>300+ stays in Lonavla</p>
                 <h4>More than 8,000 guests have stayed in Lonavla. On average they rated their stays 4.6 out of 5stars</h4>
             </Infodiv>
+        <hr />
+
           {hotel.map((item) => <StyledCard item={item} />) }
             <div>
                 <img width="100%" src={page}/>
@@ -129,7 +138,8 @@ export const MapwithHotels = () => {
         <MapDiv><RightMap /></MapDiv>
         
       </Wrapper>
-
+      <Footer/>
+  
       {/* <FooterDiv /> */}
     </div>
   );

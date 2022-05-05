@@ -8,6 +8,10 @@ import { BookHotel } from './components/BookHotel/BookHotel';
 import Payment from './components/Payment/Payment';
 import { Superhost } from './components/Superhost/Superhost';
 
+import { Singup } from './components/Homepage/LoginSignup/Signup';
+import {Footer } from './components/Homepage/Footer/footer'
+// import {Experience } from './components/Experience/Experience'
+
 
 
 function App() {

@@ -5,7 +5,8 @@ import {starr} from '../Mapwithhotels/star'
 
 const OuterTotal = styled.div`
     width:90%;
-    min-width:400px;
+    min-width:370px;
+    margin-left:30px;
     border-radius:10px;
     border:1px solid #cfcbcb;
     height:550px;
@@ -22,7 +23,7 @@ const OuterTotal = styled.div`
     }
     @media (max-width:600px){
         width:100%;
-        
+        margin-left:0;
         .innertot{
             width:100%;
         }

@@ -103,7 +103,6 @@ const LeftDiv = styled.div`
 
     @media (max-width:800px){
         .ss{
-            // border:1px solid red;
             display:flex;
             flex-direction:column;
             height:450px;
@@ -189,8 +188,6 @@ const Stats = ({img}) => {
                     {img.map((item,i)=>i<3&&<div className="img-cont">
                         <img src={item}/>
                         <div>
-                            <h3>Living room </h3>
-                            <p>Bed 1</p>
                         </div>
                     </div>)}
                     
