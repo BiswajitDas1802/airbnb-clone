@@ -35,10 +35,10 @@ export const Hamburger = () => {
 
   return (
     <div>
-        {user?<p onClick={()=>{dispatch(googleSignOut())
+        {userr?<p onClick={()=>{dispatch(googleSignOut())
           handleHamPopout()
         }} style={{cursor:"pointer"}}><b>LogOut</b></p>:<p onClick={handleLogInPopin} style={{cursor:"pointer"}}><b>SignUp</b></p>}
-        {user?"":<p onClick={handleLogInPopin} style={{cursor:"pointer"}}>Login</p>}
+        {userr?"":<p onClick={handleLogInPopin} style={{cursor:"pointer"}}>Login</p>}
             <hr/>
         <p>Host your home</p>
         <p>Host an experience</p>

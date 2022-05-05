@@ -26,6 +26,29 @@
     
 }
 
+@media (max-width: 768px) {
+    .upper_header2{
+        width:100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+} 
+
+.upper_header2{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top:20px;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid #ccc; */
+     /* flex-direction: column;  */
+    
+} 
+
 .red_air_logo{
       display: none;
 }
@@ -119,7 +142,7 @@
         }
 .search_icon{
         padding-left:15px ;
-        padding-top: 15px;
+        /* padding-top: 15px; */
         padding-right: 15px;
         padding-bottom:20px ;
         }

@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { Randomnav } from '../Randomnav'
 import Cards from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css'
+import { Footer } from "../Homepage/Footer/footer"
 
 
 const OuterDiv = styled.div`
@@ -174,7 +175,7 @@ const Payment = () => {
     }
 
   const bookingSuccess =()=>{
-      alert(`${cd.number} Your Booking Will be confirmed once the host accepts your request`)
+      alert(`${cd.name} Your Booking Will be confirmed once the host accepts your request`)
   }
 
 
@@ -264,7 +265,7 @@ const Payment = () => {
                 <RequestBook>
                     <h5 style={{fontWeight:"400"}}>By selecting the button below, I agree to the Host's House Rules, Airbnb's COVID-19 Safety Requirements and the Guest Refund Policy. I agree to pay the total amount shown if the Host accepts my booking request.</h5>
                     <button className="pinkbtn" onClick={bookingSuccess}>Request to book</button>
-                    <hr />
+                    {/* <hr /> */}
                 </RequestBook>
             </LeftDiv>
             <RightDiv>
@@ -272,6 +273,8 @@ const Payment = () => {
             </RightDiv>
         </div>
     </OuterDiv>
+    <Footer/>
+
     </>
   )
 }
