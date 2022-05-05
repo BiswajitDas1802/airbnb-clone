@@ -6,6 +6,7 @@ import { MapwithHotels } from './components/Mapwithhotels/MapwithHotels';
 import {Routes , Route} from 'react-router-dom'
 import { BookHotel } from './components/BookHotel/BookHotel';
 import Payment from './components/Payment/Payment';
+import { Superhost } from './components/Superhost/Superhost';
 
 
 
@@ -19,7 +20,7 @@ function App() {
         <Route path="bookhotel" element={<BookHotel/>}/>
         <Route path="/become-a-host" element={<Host/>}/>
         <Route path = "/payment" element={<Payment/>}/>
-        {/* <Route path = "/experience" element={<Experience/>}/> */}
+        <Route path = "/superhost" element={<Superhost/>}/>
 
 
       </Routes>
