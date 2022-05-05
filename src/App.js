@@ -7,6 +7,10 @@ import {Routes , Route} from 'react-router-dom'
 import { BookHotel } from './components/BookHotel/BookHotel';
 import Payment from './components/Payment/Payment';
 
+import { Singup } from './components/Homepage/LoginSignup/Signup';
+import {Footer } from './components/Homepage/Footer/footer'
+// import {Experience } from './components/Experience/Experience'
+
 
 
 function App() {
@@ -19,8 +23,6 @@ function App() {
         <Route path="bookhotel" element={<BookHotel/>}/>
         <Route path="/become-a-host" element={<Host/>}/>
         <Route path = "/payment" element={<Payment/>}/>
-        {/* <Route path = "/experience" element={<Experience/>}/> */}
-
 
       </Routes>
     </div>
