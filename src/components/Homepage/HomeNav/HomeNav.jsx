@@ -155,6 +155,7 @@ export const HomeNav = () => {
 
   return (
     <>
+
       <div
         style={
           scroll_search
@@ -230,6 +231,7 @@ export const HomeNav = () => {
             </Hamwrapper>
           </div>
         </div>
+
 
         <div className={lower_head ? "lower_header active" : "lower_header"}>
           <div className="location_nav">

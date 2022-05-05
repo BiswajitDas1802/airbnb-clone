@@ -1,3 +1,4 @@
+
 import {
   BOOK_HOTEL,
   GOOGLE_LOGOUT,
@@ -102,3 +103,4 @@ export const googleSignOut = () => {
 export const phoneSignUp = () => {
   return function (dispatch) {};
 };
+
