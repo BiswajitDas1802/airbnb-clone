@@ -64,19 +64,19 @@ export const Host=()=>{
             </div>
             <img style={{paddingRight:"140px"}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAADRCAMAAAAquaQNAAAAA1BMVEX///+nxBvIAAAAR0lEQVR4nO3BMQEAAADCoPVP7WULoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABuxZIAAeHuCGgAAAAASUVORK5CYII=" width="600px"></img>
         </div>
-        <div id="hide_about">
+        <div  id="hide_about">
+            <div style={{backgroundColor:"white",marginTop:"10px"}}></div>
+            <div style={{backgroundColor:"white",marginTop:"10px"}}></div>
+            <div style={{backgroundColor:"white",marginTop:"10px"}}></div>
             <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div style={{marginTop:"10px"}}></div>
+            <div style={{marginTop:"10px"}}></div>
+            <div style={{marginTop:"10px"}}></div>
         </div>
 
         <div id="earning">
             <div>
-            <p style={{marginLeft:"10%"}}>Host your</p>
+            <p style={{marginLeft:"15%"}}>Host your</p>
             <select>
                 <option id="ganaura_option">shared room</option>
                 <option id="ganaura_option">entire place</option>
@@ -104,7 +104,7 @@ export const Host=()=>{
             </select>
             </div>
             <div id="second_line">
-                <p style={{marginRight:"280px"}}>in</p>
+                <p style={{marginRight:"300px"}}>in</p>
                 <select style={{marginRight:"30%"}}>
                     <option id="ganaura_option">Ganaur</option>
                     <option id="ganaura_option">Gurgaon</option>

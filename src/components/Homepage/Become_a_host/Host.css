@@ -3,7 +3,7 @@
     }
 #host_header{
     width:100%;
-    height:560px;
+    height:90vh;
     border:1px solid black;
     display: flex;
 }
@@ -17,6 +17,7 @@
 }
 #left_header>img{
     margin-top: 8%;
+    margin-left: 8%;
     margin-left: 8%;
 }
 #left_header>p{

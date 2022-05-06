@@ -1,11 +1,9 @@
-
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-button{
+button {
   cursor: pointer;
+  /* justify-content: space-evenly; */
 }
-

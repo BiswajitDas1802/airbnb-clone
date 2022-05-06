@@ -13,6 +13,7 @@
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
     "@turf/turf": "^6.5.0",
+    "axios": "^0.27.2",
     "firebase": "^9.6.10",
     "geolib": "^3.3.3",
     "mapbox-gl": "^2.7.1",
@@ -29,7 +30,8 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "worker-loader": "^3.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

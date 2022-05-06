@@ -94,7 +94,7 @@ const Description = ({item}) => {
           <H3>{windWid<1300?location.substring(0,30)+"...":location}</H3>
         </div>
         <hr/>
-        <div onClick={()=>handleBook(item)} className="description_btm"> 
+        <div style={{cursor: 'pointer'}} onClick={()=>handleBook(item)} className="description_btm"> 
             <P width={"70%"}>{winwidth?"":description}</P>
         </div>
         <BotDiv  winwidth={winwidth}>
