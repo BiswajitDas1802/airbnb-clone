@@ -1,0 +1,314 @@
+#smaindiv{
+    width:95%;
+    height:100px;
+    /* border:1px solid red; */
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    margin-top:2%;
+    /* position: fixed; */
+}
+#simage>img{
+    height:70px;
+    width:80px;
+}
+#sbutton{
+    height:50px;
+    width:170px;
+    background-color: #5f002a;
+    border:none;
+    color: aliceblue;
+    border-radius: 7px;
+    margin-top:10%;
+    font-size:medium;
+}
+#sask{
+    margin-left:10%;
+    margin-top: 10%;
+    color:#5f002a;
+    
+}
+#sask>h1{
+    font-size:350%;
+}
+#sask>button{
+    background-color: #5f002a;
+    height:55px;
+    width:200px;
+    border:none;
+    border-radius: 7px;
+    color: aliceblue;
+    margin-top: 4%;
+    font-size:large;
+}
+#stwodiv{
+    width:100%;
+    height:600px;
+    /* border:1px solid teal; */
+    margin-top:50px;
+    display:flex;
+}
+#sfirstdiv{
+
+    width:50%;
+    height:100%;
+    /* border:1px solid red; */
+    background-color: #5f002a;
+    color:white;
+
+}
+#sfirstdiv>div{
+    margin-top:40%;
+    margin-left: 30%;
+    margin-right: 20%;
+}
+#sheading4
+{
+    font-size: 150%;
+    font-weight: 450;
+}
+#sheading1
+{
+    font-size:250%;
+}
+
+
+#sseconddiv{
+  
+    width:50%;
+    height:100%;
+    /* border:1px solid rgb(0, 153, 255) */
+}
+#sseconddiv>img{
+    width:100%;
+    height:100%
+}
+#sthreeflex{
+    height:300px;
+    width:100%;
+    /* border:1px solid chartreuse; */
+    margin-top: 12%;
+    display:flex;
+}
+#soneone{
+    width:20%;
+    height:100%;
+    /* border:1px solid yellowgreen; */
+    margin-left:8%;
+}
+#stwotwo{
+    width:20%;
+    height:100%;
+    /* border:1px solid yellowgreen; */
+    margin-left: 12%;
+}
+#sthreethree{
+    width:20%;
+    height:100%;
+    /* border:1px solid yellowgreen; */
+    margin-left: 12%;
+}
+#sheadtip
+{
+    font-size: 200%;
+    font-weight: 530;
+}
+#spara{
+    font-size: 120%;
+    color: rgb(98, 97, 97);
+}
+#syour{
+    margin:auto;
+    /* margin-left:10%; */
+    text-align: center;
+    margin-top:10%;
+    font-size:300%;
+    color:#222222
+}
+#sokati{
+    width:100%;
+    height:700px;
+    border: 1px solid rgb(252, 253, 255);
+    margin-top: 100px;
+    /* background-image:url(coffe.jpg) */
+    background-image:url("coffe.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+/* #sokati>img{
+    width:100%;
+    height:700px;
+} */
+#soneokati{
+    width:45%;
+    height:37%;
+    margin-left:10%;
+    margin-top: 10%;;
+    border:1px solid rgb(255, 252, 252);
+    border-radius: 10px;
+    background-color: white;
+}
+#smeet{
+    height:100%;
+    width:80%;
+    /* border:1px solid chocolate; */
+    margin:auto;
+   
+}
+#ssmeets{
+    font-weight: 546;
+    font-size:xx-large;
+    margin-top: none;
+    line-height : 10px;
+    color:#222222;
+}
+#ssstep{
+    color:#222222;
+    font-weight: 600;
+}
+#ssimaan{
+    height:50%;
+    width:100%;
+    /* border:1px solid chocolate; */
+    margin:auto;
+    margin-top:5%;
+    display:flex;
+}
+#simaman_image>img{
+    width:100%;
+    height:40%;
+    border-radius:50%;
+    margin-right: 100%;
+}
+#simaman_image{
+    margin-right: 8%;
+}
+#srendu{
+    width:100%;
+    height:700px;
+    border: 1px solid rgb(252, 253, 255);
+    margin-top: 100px;
+    /* background-image:url(coffe.jpg) */
+    background-image:url("rendu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#smoodu{
+    width:100%;
+    height:700px;
+    border: 1px solid rgb(252, 253, 255);
+    margin-top: 100px;
+    /* background-image:url(coffe.jpg) */
+    background-image:url("moodu.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#sblack{
+    height:900px;
+    width:100%;
+    border:1px solid rgb(7, 7, 7);
+    background-color: black;
+}
+#sblackbox{
+    height:75%;
+    width:85%;
+    /* border:1px solid rgb(255, 0, 200); */
+    margin:auto;
+    margin-top:10%;
+}
+#sblackheading{
+
+    color:white;
+    font-size: 350%;
+}
+#sblackpara{
+    color:white;
+    font-size: 120%
+
+}
+#sblackbutton{
+    height:50px;
+    font-size:medium;
+    border-radius: 7px;
+    border:none;
+    margin-right: 18px;
+    width:200px;
+    cursor:pointer;
+    color:#222222;
+}
+#sblackbutton2{
+    height:50px;
+    font-size:medium;
+    border-radius: 7px;
+    color:white;
+    background-color: black;
+    border:1px solid white;
+    margin-top:3%;
+    /* border: white; */
+    cursor:pointer;
+
+
+}
+
+#sblackbutton2:hover {
+    background-color: rgb(143, 143, 136);
+  }
+
+  #sflexfour{
+      display:flex;
+      /* border:1px solid rgb(0, 38, 255); */
+      height:52%;
+      width:100%;
+      margin-top: 5%;
+  }
+
+  #sflexfour1{
+      margin-right: 10px;
+      height:100%;
+      width:25%;
+      border-radius: 8px;
+      /* border:1px solid rgb(217, 0, 255); */
+      background-image: url("flexone.jpg");
+      /* background-repeat:none; */
+      background-size: 100% 100%;
+     
+  }
+  #sflexfour2{
+    margin-right: 10px;
+    height:100%;
+    width:25%;
+    border-radius: 8px;
+    /* border:1px solid rgb(0, 255, 221); */
+    background-image: url("flextwo.jpg");
+    background-size: 100% 100%;
+   
+}
+#sflexfour3{
+    margin-right: 10px;
+    height:100%;
+    width:25%;
+    border-radius: 8px;
+    /* border:1px solid rgb(217, 0, 255); */
+    background-image: url("flexthree.jpg");
+    background-size: 100% 100%;
+   
+}
+#sflexfour4{
+    margin-right: 10px;
+    height:100%;
+    width:25%;
+    border-radius: 10px;
+    /* border:1px solid rgb(0, 255, 234); */
+    background-image: url("flexfour.jpg");
+    background-size: 100% 100%;
+   
+}
+#sflexx1
+{
+    margin-top: 80%;
+    color:white;
+    font-size: xx-large;
+    font-weight: 530;
+    margin-left: 10%;
+}
+

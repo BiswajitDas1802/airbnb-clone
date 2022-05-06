@@ -22,6 +22,11 @@ const ShowPage =()=>{
     navigate("/experience")
 }
 
+const handleSuperHost =()=>{
+
+    navigate("/superhost")
+}
+
 
 
   return (
@@ -104,7 +109,7 @@ const ShowPage =()=>{
         <div style={{marginBottom:"5%"}} className={Styles.question_box}>
             <div className={Styles.question_box_image}>
                 <p className={Styles.question_title}>Questions about hosting?</p>
-                <button className={Styles.superhost_button}>Ask a Superhost</button>
+                <button className={Styles.superhost_button} onClick={handleSuperHost}>Ask a Superhost</button>
             </div>
         </div>
 

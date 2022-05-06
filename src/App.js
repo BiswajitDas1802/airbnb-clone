@@ -6,8 +6,9 @@ import { Routes, Route } from "react-router-dom";
 import { BookHotel } from "./components/BookHotel/BookHotel";
 import Payment from "./components/Payment/Payment";
 import { Experience } from "./components/Experience/Experience";
-import { Singup } from "./components/Homepage/LoginSignup/Signup";
-import { Footer } from "./components/Homepage/Footer/footer";
+// import { Singup } from "./components/Homepage/LoginSignup/Signup";
+// import { Footer } from "./components/Homepage/Footer/footer";
+import { Superhost } from "./components/Superhost/Superhost";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
         <Route path="/become-a-host" element={<Host />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/experience" element={<Experience />} />
+
+        <Route path="/superhost" element={<Superhost />} />
       </Routes>
     </div>
   );
