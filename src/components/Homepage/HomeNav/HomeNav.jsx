@@ -154,7 +154,17 @@ export const HomeNav = () => {
     navigate("/search");
   };
 
+const handleTypeIn =()=>{
+
+    document.getElementById("checkin").type = "date"
+}
+const handleTypeOut =()=>{
+
+    document.getElementById("checkout").type = "date"
+}
+
   return (
+    
     <>
       <div
         style={
@@ -173,7 +183,6 @@ export const HomeNav = () => {
             <p>Experiences</p>
             <p>Online Experiences</p>
           </div>
-
           <div
             className={
               scroll_search
@@ -192,7 +201,6 @@ export const HomeNav = () => {
               ></img>
             </span>
           </div>
-
           <div
             className={
               become_host ? `${styles.C2} ${styles.C1}` : `${styles.C1}`
@@ -211,7 +219,6 @@ export const HomeNav = () => {
             <div
               className={globe_icon ? "globe_logo active" : "globe_logo"}
             ></div>
-
             <Hamwrapper onClick={handleHamPopin}>
               <div>
                 <img
@@ -231,7 +238,6 @@ export const HomeNav = () => {
             </Hamwrapper>
           </div>
         </div>
-
         <div className={lower_head ? "lower_header active" : "lower_header"}>
           <div className="location_nav">
             <p>Location</p>
@@ -245,35 +251,36 @@ export const HomeNav = () => {
               />
             </p>
           </div>
-
           <div>
             <p>Check in</p>
-
             <p>
               <input
-                type="date"
+                type="text"
+                placeholder="Check-in date"
+                id="checkin"
                 name="start"
+                onFocus={handleTypeIn}
                 onChange={changeInput}
                 min="2022-04-09"
                 style={{ border: "none", outline: "none" }}
               />
             </p>
           </div>
-
           <div>
             <p>Check out</p>
-
             <p>
               <input
-                type="date"
+                type="text"
+                placeholder="Check-out date"
+                id="checkout"
                 name="end"
+                onFocus={handleTypeOut}
                 onChange={changeInput}
                 style={{ border: "none", outline: "none" }}
                 min="2022-04-09"
               />
             </p>
           </div>
-
           <div onClick={handleGuestPopin} style={{ cursor: "pointer" }}>
             <p>Guests</p>
             <p>
@@ -281,7 +288,6 @@ export const HomeNav = () => {
               {pet === 0 ? "" : "," + pet + " pets"}
             </p>
           </div>
-
           <span onClick={searchBnb} className="search_nav">
             {guest > 0 || pet > 0 ? (
               <b
@@ -297,7 +303,6 @@ export const HomeNav = () => {
             ) : (
               <p></p>
             )}
-
             <img
               className="search_icon"
               src="https://hamariweb.com/names/img/search_light.png"
@@ -320,7 +325,6 @@ export const HomeNav = () => {
           <p>Where are you going?</p>
         </div>
       </div>
-
       <Modal
         open={displayHam}
         onClose={handleHamPopout}
@@ -331,7 +335,6 @@ export const HomeNav = () => {
           <Hamburger displayHam={displayHam} setDisplayHam={setDisplayHam} />
         </Box>
       </Modal>
-
       <Modal
         open={displayGuest}
         onClose={handleGuestPopout}

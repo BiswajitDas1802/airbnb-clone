@@ -220,14 +220,45 @@
   }
   .nav2_inside {
     display: flex;
-    /* width: 100%; */
-    margin: auto;
-    background-color: whitesmoke;
-    color: black;
-    margin-top: 10px;
-    border-radius: 20px;
-    padding-left: 30%;
-    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.red_air_logo{
+      display: none;
+}
+.logo{
+      background-image: url("https://www.himmapanavillas.com/wp-content/uploads/2020/09/AirBnB-logo.png");
+      width:130px;
+      height:35px;
+      background-size: 100% 100%;
+      cursor: pointer;
+  }
+.logo.active{
+      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png");
+      width:105px;
+      height:32px;
+      margin-left: 13%;
+      cursor: pointer;
+  }
+.globe_logo{
+      background-image: url("https://icon-library.com/images/globe-icon-white/globe-icon-white-8.jpg");
+      width:20px;
+      height:20px;
+      background-size: 100% 100%;
+      margin-top: 17px;
+  }
+.globe_logo.active{
+    background-image: url("https://cdn1.iconfinder.com/data/icons/ui-next-2020-shopping-and-e-commerce-1/12/75_globe-512.png");
+    width:17px;
+      height:17px;
+  }
+  .right_nav{
+    display:flex;
+    justify-content:space-between;
+    width:21%;
+    color:white;
+    font-weight: 400;
     font-size: 15px;
     font-weight: 600;
   }

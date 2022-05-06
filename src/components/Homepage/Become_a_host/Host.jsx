@@ -9,7 +9,7 @@ export const Host=()=>{
     <>
     <div id="host_header">
         <div id="left_header">
-               <Link to="/"> <img  src="https://freepikpsd.com/file/2019/10/airbnb-logo-white-png-4-Transparent-Images.png" width="90px" height="65px"></img></Link>
+               <Link to="/"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png" width="100px" height="50px"></img></Link>
                 <p>Hosting</p>
                 <p>makes Airbnb,</p>
                 <p>Airbnb</p>

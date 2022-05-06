@@ -3,15 +3,33 @@ import superhost from "./superhost.png"
 import womenhost from"./womenhost.jpg"
 import imman from "./imman.jpg"
 import khun from "./khun.jpg"
+import {useNavigate} from "react-router-dom"
+import { handleBreakpoints } from "@mui/system"
+
+
+
 
 export const Superhost = () =>{
+
+    const navigate = useNavigate();
+
+    const handleHost =()=>{
+
+        navigate("/become-a-host")
+    }
+
+    const handlelogo =()=>{
+
+        navigate("/")
+    }
+
     let price=20;
     return (
         <div>
             <div>
                 <div id={styles.smaindiv}>
-                    <div id={styles.simage}><img src={superhost} alt="Logo" /></div>
-                    <div><button id={styles.sbutton}><b>Become a Host</b></button></div>
+                    <div id={styles.simage} onClick={handlelogo}><img src={superhost} alt="Logo" /></div>
+                    <div><button id={styles.sbutton} onClick={handleHost}><b>Become a Host</b></button></div>
                 </div>
 
                 <div id={styles.sask}>
