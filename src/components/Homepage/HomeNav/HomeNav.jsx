@@ -34,6 +34,7 @@ export const HomeNav = () => {
     left: "78%",
     width: "15%",
     marginTop: "70px",
+    outline: "none",
     bgcolor: "background.paper",
     borderRadius: "10px",
     fontFamily: "sans-serif",
@@ -155,7 +156,6 @@ export const HomeNav = () => {
 
   return (
     <>
-
       <div
         style={
           scroll_search
@@ -231,7 +231,6 @@ export const HomeNav = () => {
             </Hamwrapper>
           </div>
         </div>
-
 
         <div className={lower_head ? "lower_header active" : "lower_header"}>
           <div className="location_nav">
