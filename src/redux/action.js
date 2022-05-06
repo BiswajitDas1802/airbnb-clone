@@ -1,4 +1,3 @@
-
 import {
   BOOK_HOTEL,
   GOOGLE_LOGOUT,
@@ -82,7 +81,7 @@ export const googleSignin = () => {
       })
       .then(() => alert("Log In Successfull"))
       .then((error) => {
-        dispatch(googleSigninFail(error.message));
+        dispatch(googleSigninFail(error));
       });
   };
 };
@@ -103,4 +102,3 @@ export const googleSignOut = () => {
 export const phoneSignUp = () => {
   return function (dispatch) {};
 };
-

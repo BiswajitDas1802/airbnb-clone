@@ -1,250 +1,234 @@
-.nav2{
-    display: none;
+.nav2 {
+  display: none;
 }
-.navbar{
-    width:100%;
+.navbar {
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  justify-content: space-around;
+  position: fixed;
+  background: transparent;
+  top: 0;
+  height: 145px;
+}
+.navbar.active {
+  background: white;
+  height: 80px;
+  border-bottom: 1px solid rgb(228, 224, 224);
+}
+.upper_header {
+  padding-top: 12px;
+  padding-bottom: 10px;
+  width: 88%;
+  margin: auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .upper_header2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.upper_header2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* border-bottom: 1px solid #ccc; */
+  /* flex-direction: column;  */
+}
+
+.red_air_logo {
+  display: none;
+}
+.logo {
+  background-image: url("https://www.himmapanavillas.com/wp-content/uploads/2020/09/AirBnB-logo.png");
+  width: 130px;
+  height: 35px;
+  background-size: 100% 100%;
+}
+.logo.active {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png");
+  width: 105px;
+  height: 32px;
+  margin-left: 13%;
+}
+.globe_logo {
+  background-image: url("https://icon-library.com/images/globe-icon-white/globe-icon-white-8.jpg");
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+  margin-top: 17px;
+}
+.globe_logo.active {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/ui-next-2020-shopping-and-e-commerce-1/12/75_globe-512.png");
+  width: 17px;
+  height: 17px;
+}
+.right_nav {
+  display: flex;
+  justify-content: space-between;
+  width: 21%;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 1px;
+}
+.host_decoration {
+  color: white;
+}
+.host_decoration:hover {
+  background-color: gray;
+  border-radius: 3px;
+}
+.host_decoration.active {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+.host_decoration.active:hover {
+  background-color: gray;
+  border-radius: 3px;
+}
+.right_nav.active {
+  color: black;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.lower_header {
+  background-color: white;
+  width: 743px;
+  margin-top: 50%;
+  border-radius: 35px;
+  display: flex;
+  height: 45%;
+  margin: auto;
+  line-height: 8px;
+  justify-content: space-between;
+  gap: 1px;
+  font-size: 14px;
+  color: rgb(116, 110, 110);
+  display: flex;
+}
+.lower_header.active {
+  display: none;
+}
+.location_nav {
+  padding-right: 10%;
+  margin-left: 3%;
+  border-left: 1px solid transparent;
+}
+.search_nav {
+  background-color: #ff385c;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+}
+.search_icon {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+.lower_header > div {
+  width: 30%;
+  border-left: 1px solid rgb(210, 210, 218);
+  height: 32px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.lower_header > div > p {
+  margin-top: 1px;
+}
+.lower_header > div > p:nth-child(1) {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+.navmiddle {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin-right: -10%;
+}
+.navmiddle.active {
+  display: none;
+}
+.after_scroll_search {
+  width: 27%;
+  background-color: white;
+  border: 1px solid rgb(224, 218, 218);
+  border-radius: 40px;
+  color: black;
+  display: none;
+  justify-content: space-between;
+  margin-left: 13%;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+}
+.after_scroll_search.active {
+  display: flex;
+}
+.after_scroll_search > p {
+  margin-left: 7%;
+}
+.search_nav_scroll {
+  background-color: #ff385c;
+  border-radius: 50%;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 10px;
+}
+.search_icon_scroll {
+  padding-left: 10px;
+  padding-top: 9px;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 744px) {
+  .navbar {
+    display: none;
+    width: 100%;
     border-bottom: 1px solid transparent;
     justify-content: space-around;
     position: fixed;
     background: transparent;
-    top:0;
-    height:145px;
-}
-.navbar.active{
-    background:white;
-    height:80px;
-    border-bottom: 1px solid rgb(228, 224, 224);
- }
- .upper_header{
-    padding-top:12px;
-    padding-bottom: 10px;
-    width:88%;
+    top: 0;
+    height: 145px;
+  }
+  .nav2 {
+    display: block;
+    background-color: black;
+  }
+  .nav2.active {
+    display: block;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+  }
+  .nav2_inside {
+    display: flex;
+    /* width: 100%; */
     margin: auto;
-    color:white;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-@media (max-width: 768px) {
-    .upper_header2{
-        width:100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    
-} 
-
-.upper_header2{
-    width:100%;
-    display: flex;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding-left: 30%;
     align-items: center;
-    justify-content:space-between;
-    padding-top:20px;
-    padding-bottom: 20px;
-    /* border-bottom: 1px solid #ccc; */
-     /* flex-direction: column;  */
-    
-} 
-
-.red_air_logo{
-      display: none;
-}
-.logo{
-      background-image: url("https://www.himmapanavillas.com/wp-content/uploads/2020/09/AirBnB-logo.png");
-      width:130px;
-      height:35px;
-      background-size: 100% 100%;
-  }
-.logo.active{
-      background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png");
-      width:105px;
-      height:32px;
-      margin-left: 13%;
-  }
-.globe_logo{
-      background-image: url("https://icon-library.com/images/globe-icon-white/globe-icon-white-8.jpg");
-      width:20px;
-      height:20px;
-      background-size: 100% 100%;
-      margin-top: 17px;
-  }
-.globe_logo.active{
-    background-image: url("https://cdn1.iconfinder.com/data/icons/ui-next-2020-shopping-and-e-commerce-1/12/75_globe-512.png");
-    width:17px;
-      height:17px;
-  }
-  .right_nav{
-    display:flex;
-    justify-content:space-between;
-    width:21%;
-    color:white;
-    font-weight: 400;
     font-size: 15px;
-    margin-top: 1px;
+    font-weight: 600;
   }
-.host_decoration{
-      color:white;
-  }
-  .host_decoration:hover{
-
-        background-color: gray;
-        border-radius: 3px;
-  }
-.host_decoration.active{
-      color:black;
-      font-weight: 500;
-      font-size: 14px;
-  }
-.host_decoration.active:hover{
-
-    background-color: gray;
-    border-radius: 3px;
 }
-.right_nav.active{
-      color:black;
-      color:white;
-      font-weight: 500;
-      font-size: 14px;
-      margin-top: 5px;
-}
-.lower_header{
-        background-color: white;
-        width:743px;
-        margin-top:50%;
-        border-radius: 35px;
-        display: flex;
-        height:45%;
-        margin:auto;
-        line-height: 8px;
-        justify-content: space-between;
-        gap:1px;
-        font-size: 14px;
-        color:rgb(116, 110, 110);
-        display: flex;
-    }
-.lower_header.active{
-        display: none;
-    }
-.location_nav{
-        padding-right: 10%;
-        margin-left: 3%;
-        border-left:1px solid transparent;
-    }
-.search_nav{
-        background-color: #ff385c;
-        border-radius: 50%;
-        margin-top: 7px;
-        margin-bottom: 7px;
-        margin-right: 10px;
-        }        
-.search_icon{
-        padding-left:15px ;
-        padding-right: 15px;
-        padding-bottom:20px ;
-        cursor: pointer;
-        }
-.lower_header>div{
-        width:30%;
-        border-left:1px solid rgb(210, 210, 218);
-        height:32px;
-        margin-top: 15px;
-        margin-bottom: 5px;
-        }
-.lower_header>div>p{
-        margin-top: 1px;
-        
-        }
-.lower_header>div>p:nth-child(1){
-        font-size: 13px;
-        font-weight: 600;
-        color:black;
-        }
-.navmiddle{
-        display:flex;
-        justify-content:space-around;
-        width:50%;
-        margin-right: -10%;
-
-        }
-.navmiddle.active{
-        display: none;
-    }
-.after_scroll_search{
-        width:27%;
-        background-color: white;
-        border:1px solid rgb(224, 218, 218);
-        border-radius: 40px;
-        color:black;
-        display: none;
-        justify-content: space-between;
-        margin-left: 13%;
-        font-size: 14px;
-        font-weight: 500;
-        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        cursor: pointer;
-    }
-.after_scroll_search.active{
-        display: flex;
-    }
-.after_scroll_search>p{
-        margin-left: 7%;
-    }
-.search_nav_scroll{
-        background-color: #ff385c;
-        border-radius: 50%;
-        margin-top: 7px;
-        margin-bottom: 7px;
-        margin-right: 10px;
-    }
-.search_icon_scroll{
-        padding-left:10px ;
-        padding-top: 9px;
-        padding-right: 10px;
-    }
-          
-    
-@media only screen and (max-width: 744px){
-
-    .navbar{
-        display: none;
-        width:100%;
-        border-bottom: 1px solid transparent;
-        justify-content: space-around;
-        position: fixed;
-        background: transparent;
-        top:0;
-        height:145px;
-    }
-    .nav2{
-        display: block;
-        background-color: black;
-    }
-    .nav2.active{
-        display: block;
-        background-color: white;
-        position: fixed;
-        width: 100%;
-    }
-    .nav2_inside{
-
-        display: flex;
-        width: 100%;
-        margin:auto;
-        background-color: whitesmoke;
-        color: black;
-        margin-top: 10px;
-        border-radius: 20px;
-        padding-left: 30%;
-        align-items: center;
-        font-size: 15px;
-        font-weight: 600;
-    }
-    
-}
-
-    
-
-    
