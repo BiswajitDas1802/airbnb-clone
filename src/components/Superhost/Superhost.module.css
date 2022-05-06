@@ -11,6 +11,7 @@
 #simage>img{
     height:70px;
     width:80px;
+    cursor: pointer;
 }
 #sbutton{
     height:50px;

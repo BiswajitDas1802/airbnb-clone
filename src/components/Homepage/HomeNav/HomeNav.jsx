@@ -151,6 +151,15 @@ const searchBnb=()=>{
     navigate('/search')
 }
 
+const handleTypeIn =()=>{
+
+    document.getElementById("checkin").type = "date"
+}
+const handleTypeOut =()=>{
+
+    document.getElementById("checkout").type = "date"
+}
+
   return (
     <>
         <div style={scroll_search?{backgroundColor:"white"}:{backgroundColor:"black"}} className={homeNav?"navbar active":"navbar"}>
@@ -201,7 +210,7 @@ const searchBnb=()=>{
                         <p>Check in</p>
 
                     
-                        <p><input type="date" name="start" onChange={changeInput} min="2022-04-09" style={{border:"none" ,outline:"none"} }/></p>
+                        <p><input type="text" placeholder='Check-in date' onFocus={handleTypeIn} id="checkin" name="start" onChange={changeInput} min="2022-04-09" style={{border:"none" ,outline:"none"} }/></p>
 
                     </div>
 
@@ -209,7 +218,7 @@ const searchBnb=()=>{
                         <p>Check out</p>
 
 
-                        <p><input type="date" name="end"  onChange={changeInput}  style={{border:"none" ,outline:"none"}} min="2022-04-09"/></p>
+                    <p><input type="text" placeholder='Check-out date' onFocus={handleTypeOut} name="end" id="checkout"  onChange={changeInput}  style={{border:"none" ,outline:"none"}} min="2022-04-09"/></p>
                     </div>
 
                     <div onClick={handleGuestPopin} style={{cursor:"pointer"}}>

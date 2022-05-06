@@ -87,7 +87,7 @@ export const GuestList = ({guest,setGuest,pet,setPet}) => {
           <div style={{display:"Flex" ,marginLeft:"33%",gap:"20px" ,alignItems:"center"}}>
               <Button onClick={handleSubAdult} disabled={adults>0?false:true}>-</Button>
               <p>{adults}</p>
-              <Button onClick={handleAddAdult}>+</Button>
+              <Button onClick={handleAddAdult} disabled={guest<16?false:true}>+</Button>
           </div>
 
 
@@ -106,7 +106,7 @@ export const GuestList = ({guest,setGuest,pet,setPet}) => {
           <div style={{display:"Flex" ,marginLeft:"43%",gap:"20px" ,alignItems:"center"}}>
               <Button onClick={handleSubChild} disabled={child>0?false:true}>-</Button>
               <p>{child}</p>
-              <Button onClick={handleAddChild}>+</Button>
+              <Button onClick={handleAddChild} disabled={guest<16?false:true}>+</Button>
           </div>
 
         </div>
@@ -124,7 +124,7 @@ export const GuestList = ({guest,setGuest,pet,setPet}) => {
           <div style={{display:"Flex" ,marginLeft:"46%",gap:"20px",alignItems:"center"}}>
               <Button onClick={handleSubInfants} disabled={infants>0?false:true}>-</Button>
               <p>{infants}</p>
-              <Button onClick={handleAddInfants}>+</Button>
+              <Button onClick={handleAddInfants} disabled={guest<16?false:true}>+</Button>
           </div>
 
         </div>
@@ -142,7 +142,7 @@ export const GuestList = ({guest,setGuest,pet,setPet}) => {
           <div style={{display:"Flex" ,marginLeft:"20%" ,gap:"20px",alignItems:"center"}}>
               <Button onClick={handleSubPet} disabled={pet>0?false:true}>-</Button>
               <p>{pet}</p>
-              <Button onClick={handleAddPet}>+</Button>
+              <Button onClick={handleAddPet} disabled={pet<5?false:true}>+</Button>
           </div>
 
         </div>
